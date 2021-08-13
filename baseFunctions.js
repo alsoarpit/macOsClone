@@ -15,8 +15,7 @@ setInterval(function(){
         }
     }
     let homePageTitleDateTime = document.querySelector('.homePageTitleDateTime');
-    homePageTitleDateTime.innerText = `${day} ${hrs}:${min} ${amOrPm}`
-    console.log(`${day} ${hrs}:${min} ${amOrPm}`);
+    homePageTitleDateTime.innerText = `${day} ${hrs}:${min} ${amOrPm}`;
 
 },1000);
 
@@ -81,10 +80,14 @@ function fullScreenCircle(appBox){
     let fullScreenCircle = fullScreenCircleBox.querySelector('.mac-dialogBox-title-icon2');
     fullScreenCircle.addEventListener("click",function(){
         let boxBox = document.querySelector(appBox);
+        console.log(appBox);
         
-        if(document.querySelector(appBox).getAttribute('style')){
+        if(document.querySelector(appBox).getAttribute('style') && document.querySelector(appBox).getAttribute('style').includes("position: fixed;")){
+            // console.log(document.querySelector(appBox).getAttribute('style').includes("position: fixed;"));
+            console.log(document.querySelector(appBox).getAttribute('style'));
             let boxContainer = document.querySelector('.box-container');
-            boxBox.removeAttribute("style");
+            boxBox.style="";
+            boxBox.style.zIndex = "80";
             boxContainer.removeAttribute("style");
             return;
         }
@@ -94,7 +97,6 @@ function fullScreenCircle(appBox){
         boxBox.style.height ="100vh";
         boxBox.style.width ="100vw";
         boxBox.style.zIndex= '101';
-        console.log(boxContainer);
       
 
     }); 

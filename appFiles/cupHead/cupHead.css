@@ -1,0 +1,54 @@
+.cupHead-appSiteBox{
+    position: relative;
+    height: 96%;
+    width: 100%;
+    background-image:url(./cupHeadImage/cupHead.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    cursor: url(https://ani.cursors-4u.net/cursors/cur-12/cur1103.ani), url(https://ani.cursors-4u.net/cursors/cur-12/cur1103.png), auto !important;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Start-Container{
+    position: absolute;
+    bottom: 0px;
+    height: 40%;
+    width: 100%;
+    /* border: 3px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.startBtnBox{
+    height: 50%;
+    width: 20%;
+    border-radius: 2vw;
+    display: flex;
+    /* border: 1px solid; */
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  
+}
+
+.startBtn {
+    height: 15vh;
+    animation-name: startBtn;
+    animation-duration:1s;
+    animation-fill-mode:both;
+    animation-iteration-count: infinite;
+}
+
+@keyframes startBtn{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    } 
+}

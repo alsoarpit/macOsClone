@@ -118,18 +118,50 @@ let divScreenContainer = document.querySelector('.screenContainer');
                         </div>
                         <div class="lpApps-container">
                             <div class="lpApps-icon">
-                                <img src="./images/Games.png" alt="Games">
+                                <img src="./images/CupHead.png" alt="CupHead">
                             </div>
                             <div class="launchpad-icon-Text">
-                            Games
+                            CupHead
                             </div> 
                         </div>
                         <div class="lpApps-container">
                             <div class="lpApps-icon">
-                                <img src="./images/Instagram.png" alt="Instagram">
+                                <img src="./images/Gallery.png" alt="Gallery">
                             </div>
                             <div class="launchpad-icon-Text">
-                                Instagram
+                                Gallery
+                            </div> 
+                        </div>
+                        <div class="lpApps-container">
+                            <div class="lpApps-icon">
+                                <img src="./images/Netflix.png" alt="Netflix">
+                            </div>
+                            <div class="launchpad-icon-Text">
+                                Netflix
+                            </div> 
+                        </div>
+                        <div class="lpApps-container">
+                            <div class="lpApps-icon">
+                                <img src="./images/Todo.png" alt="Todo">
+                            </div>
+                            <div class="launchpad-icon-Text">
+                                Todo
+                            </div> 
+                        </div>
+                        <div class="lpApps-container">
+                            <div class="lpApps-icon">
+                                <img src="./images/Books.png" alt="Books">
+                            </div>
+                            <div class="launchpad-icon-Text">
+                                Books
+                            </div> 
+                        </div>
+                        <div class="lpApps-container">
+                            <div class="lpApps-icon">
+                                <img src="./images/PokemonCard.png" alt="PokemonCard">
+                            </div>
+                            <div class="launchpad-icon-Text">
+                            PokemonCard
                             </div> 
                         </div>
                         <div class="lpApps-container">
@@ -255,55 +287,7 @@ let divScreenContainer = document.querySelector('.screenContainer');
                                             whiteBoard(currDockIcon);
                                             return
                                         }
-                                    }
-                                    if(checkAppDock){
-                                        if(appName=="Instagram"){
-                                            toRemoveLaunchPad();
-                                            let launchPadDockIcon = document.querySelector('.dockIcon[dockapp="Launch"]')
-                                            launchPadDockIcon.removeAttribute('style');
-                                            let appBox=`.box-box[appbox="Instagram"]`;
-                                            let boxBox = document.querySelector(appBox);
-                                                if(boxBox){
-                                                    let styleCheck = boxBox.getAttribute('style');
-                                                    if(styleCheck && styleCheck.includes("display: none;")){
-                                                        let currDockIcon = document.querySelector(`.dockIcon[dockApp="${appName}"]`);
-                                                        currDockIcon.removeAttribute("style");
-                                                        setTimeout(function(){
-                                                            currDockIcon.style.animation = 'box 1s  alternate';
-                                                            boxBox.style.display="block";
-                                                            return; 
-                                                        },220)  
-                                                    }
-                                                }
-                                            let currDockIcon = document.querySelector(`.dockIcon[dockApp="${appName}"]`)
-                                            instagram(currDockIcon);
-                                            return
-                                        }
-                                    }
-                                    if(checkAppDock){
-                                        if(appName=="Games"){
-                                            toRemoveLaunchPad();
-                                            let launchPadDockIcon = document.querySelector('.dockIcon[dockapp="Launch"]')
-                                            launchPadDockIcon.removeAttribute('style');
-                                            let appBox=`.box-box[appbox="Games"]`;
-                                            let boxBox = document.querySelector(appBox);
-                                                if(boxBox){
-                                                    let styleCheck = boxBox.getAttribute('style');
-                                                    if(styleCheck && styleCheck.includes("display: none;")){
-                                                        let currDockIcon = document.querySelector(`.dockIcon[dockApp="${appName}"]`);
-                                                        currDockIcon.removeAttribute("style");
-                                                        setTimeout(function(){
-                                                            currDockIcon.style.animation = 'box 1s  alternate';
-                                                            boxBox.style.display="block";
-                                                            return; 
-                                                        },220)  
-                                                    }
-                                                }
-                                            let currDockIcon = document.querySelector(`.dockIcon[dockApp="${appName}"]`)
-                                            games(currDockIcon);
-                                            return
-                                        }
-                                    }
+                                    }           
                                     if(checkAppDock){
                                         if(appName=="Music"){
                                             toRemoveLaunchPad();
@@ -424,6 +408,78 @@ let divScreenContainer = document.querySelector('.screenContainer');
                                             return
                                         }
                                     }
+                                    if(checkAppDock){
+                                        if(appName=="Gallery"){
+                                            toRemoveLaunchPad();
+                                            let launchPadDockIcon = document.querySelector('.dockIcon[dockapp="Launch"]')
+                                            launchPadDockIcon.removeAttribute('style');
+                                            let appBox=`.box-box[appbox="Gallery"]`;
+                                            let boxBox = document.querySelector(appBox);
+                                                if(boxBox){
+                                                    let styleCheck = boxBox.getAttribute('style');
+                                                    if(styleCheck && styleCheck.includes("display: none;")){
+                                                        let currDockIcon = document.querySelector(`.dockIcon[dockApp="${appName}"]`);
+                                                        currDockIcon.removeAttribute("style");
+                                                        setTimeout(function(){
+                                                            currDockIcon.style.animation = 'box 1s  alternate';
+                                                            boxBox.style.display="block";
+                                                            return; 
+                                                        },220)  
+                                                    }
+                                                }
+                                            let currDockIcon = document.querySelector(`.dockIcon[dockApp="${appName}"]`)
+                                            gallery(currDockIcon);
+                                            return
+                                        }
+                                    }
+                                    if(checkAppDock){
+                                        if(appName=="CupHead"){
+                                            toRemoveLaunchPad();
+                                            let launchPadDockIcon = document.querySelector('.dockIcon[dockapp="Launch"]')
+                                            launchPadDockIcon.removeAttribute('style');
+                                            let appBox=`.box-box[appbox="CupHead"]`;
+                                            let boxBox = document.querySelector(appBox);
+                                                if(boxBox){
+                                                    let styleCheck = boxBox.getAttribute('style');
+                                                    if(styleCheck && styleCheck.includes("display: none;")){
+                                                        let currDockIcon = document.querySelector(`.dockIcon[dockApp="${appName}"]`);
+                                                        currDockIcon.removeAttribute("style");
+                                                        setTimeout(function(){
+                                                            currDockIcon.style.animation = 'box 1s  alternate';
+                                                            boxBox.style.display="block";
+                                                            return; 
+                                                        },220)  
+                                                    }
+                                                }
+                                            let currDockIcon = document.querySelector(`.dockIcon[dockApp="${appName}"]`)
+                                            cupHead(currDockIcon);
+                                            return
+                                        }
+                                    }
+                                    if(checkAppDock){
+                                        if(appName=="PokemonCard"){
+                                            toRemoveLaunchPad();
+                                            let launchPadDockIcon = document.querySelector('.dockIcon[dockapp="Launch"]')
+                                            launchPadDockIcon.removeAttribute('style');
+                                            let appBox=`.box-box[appbox="PokemonCard"]`;
+                                            let boxBox = document.querySelector(appBox);
+                                                if(boxBox){
+                                                    let styleCheck = boxBox.getAttribute('style');
+                                                    if(styleCheck && styleCheck.includes("display: none;")){
+                                                        let currDockIcon = document.querySelector(`.dockIcon[dockApp="${appName}"]`);
+                                                        currDockIcon.removeAttribute("style");
+                                                        setTimeout(function(){
+                                                            currDockIcon.style.animation = 'box 1s  alternate';
+                                                            boxBox.style.display="block";
+                                                            return; 
+                                                        },220)  
+                                                    }
+                                                }
+                                            let currDockIcon = document.querySelector(`.dockIcon[dockApp="${appName}"]`)
+                                            pokemonCard(currDockIcon);
+                                            return
+                                        }
+                                    }
 
 
                                     
@@ -494,42 +550,6 @@ let divScreenContainer = document.querySelector('.screenContainer');
                                     dockIconDblClick(cameraDockIcon,appName);
 
                                     whiteBoard(cameraDockIcon);
-                                }else if(appName=="Instagram"){
-                                    let cameraDockIcon = document.querySelector('.dockIcon[dockapp="Instagram"]');
-                                   
-                                    cameraDockIcon.addEventListener("click",function(e){
-                                        let currDockIcon=document.querySelector('.dockIcon[dockapp="Instagram"]');
-                                            if(e.detail==3){
-                                                let boxBox = document.querySelector(`.box-box[appbox="Instagram"]`);
-                                                setTimeout(()=>{
-                                                    boxBox.parentNode.removeChild(boxBox);
-                                                    currDockIcon.parentNode.removeChild(currDockIcon);
-                                                },220);
-                                            }else{
-                                                instagram(currDockIcon);
-                                            }
-                                    })
-                                    dockIconDblClick(cameraDockIcon,appName);
-
-                                    instagram(cameraDockIcon);
-                                }else if(appName=="Games"){
-                                    let cameraDockIcon = document.querySelector('.dockIcon[dockapp="Games"]');
-                                   
-                                    cameraDockIcon.addEventListener("click",function(e){
-                                        let currDockIcon=document.querySelector('.dockIcon[dockapp="Games"]');
-                                            if(e.detail==3){
-                                                let boxBox = document.querySelector(`.box-box[appbox="Games"]`);
-                                                setTimeout(()=>{
-                                                    boxBox.parentNode.removeChild(boxBox);
-                                                    currDockIcon.parentNode.removeChild(currDockIcon);
-                                                },220);
-                                            }else{
-                                                games(currDockIcon);
-                                            }
-                                    })
-                                    dockIconDblClick(cameraDockIcon,appName);
-
-                                    games(cameraDockIcon);
                                 }else if(appName=="Music"){
                                     let cameraDockIcon = document.querySelector('.dockIcon[dockapp="Music"]');
                                    
@@ -620,6 +640,60 @@ let divScreenContainer = document.querySelector('.screenContainer');
                                     dockIconDblClick(cameraDockIcon,appName);
 
                                     calculator(cameraDockIcon);
+                                }else if(appName=="Gallery"){
+                                    let cameraDockIcon = document.querySelector('.dockIcon[dockapp="Gallery"]');
+                                   
+                                    cameraDockIcon.addEventListener("click",function(e){
+                                        let currDockIcon=document.querySelector('.dockIcon[dockapp="Gallery"]');
+                                            if(e.detail==3){
+                                                let boxBox = document.querySelector(`.box-box[appbox="Gallery"]`);
+                                                setTimeout(()=>{
+                                                    boxBox.parentNode.removeChild(boxBox);
+                                                    currDockIcon.parentNode.removeChild(currDockIcon);
+                                                },220);
+                                            }else{
+                                                gallery(currDockIcon);
+                                            }
+                                    })
+                                    dockIconDblClick(cameraDockIcon,appName);
+
+                                    gallery(cameraDockIcon);
+                                }else if(appName=="CupHead"){
+                                    let cameraDockIcon = document.querySelector('.dockIcon[dockapp="CupHead"]');
+                                   
+                                    cameraDockIcon.addEventListener("click",function(e){
+                                        let currDockIcon=document.querySelector('.dockIcon[dockapp="CupHead"]');
+                                            if(e.detail==3){
+                                                let boxBox = document.querySelector(`.box-box[appbox="CupHead"]`);
+                                                setTimeout(()=>{
+                                                    boxBox.parentNode.removeChild(boxBox);
+                                                    currDockIcon.parentNode.removeChild(currDockIcon);
+                                                },220);
+                                            }else{
+                                                cupHead(currDockIcon);
+                                            }
+                                    })
+                                    dockIconDblClick(cameraDockIcon,appName);
+
+                                    cupHead(cameraDockIcon);
+                                }else if(appName=="PokemonCard"){
+                                    let cameraDockIcon = document.querySelector('.dockIcon[dockapp="PokemonCard"]');
+                                   
+                                    cameraDockIcon.addEventListener("click",function(e){
+                                        let currDockIcon=document.querySelector('.dockIcon[dockapp="PokemonCard"]');
+                                            if(e.detail==3){
+                                                let boxBox = document.querySelector(`.box-box[appbox="PokemonCard"]`);
+                                                setTimeout(()=>{
+                                                    boxBox.parentNode.removeChild(boxBox);
+                                                    currDockIcon.parentNode.removeChild(currDockIcon);
+                                                },220);
+                                            }else{
+                                                pokemonCard(currDockIcon);
+                                            }
+                                    })
+                                    dockIconDblClick(cameraDockIcon,appName);
+
+                                    pokemonCard(cameraDockIcon);
                                 }
 
                 });
@@ -651,22 +725,6 @@ let divScreenContainer = document.querySelector('.screenContainer');
         currDockIcon.addEventListener("click",function(e){
             let currDockIcon=document.querySelector('.dockIcon[dockapp="WhiteBoard"]');
             whiteBoard(currDockIcon);
-        })
-    }else if(dockAppName=="Instagram"){
-        let currDockIcon = document.querySelector(`.dockIcon[dockapp="${dockAppName}"]`)
-
-        dockIconDblClick(currDockIcon,dockAppName);             
-        currDockIcon.addEventListener("click",function(e){
-            let currDockIcon=document.querySelector('.dockIcon[dockapp="Instagram"]');
-            instagram(currDockIcon);
-        })
-    }else if(dockAppName=="Games"){
-        let currDockIcon = document.querySelector(`.dockIcon[dockapp="${dockAppName}"]`)
-
-        dockIconDblClick(currDockIcon,dockAppName);             
-        currDockIcon.addEventListener("click",function(e){
-            let currDockIcon=document.querySelector('.dockIcon[dockapp="Games"]');
-            games(currDockIcon);
         })
     }else if(dockAppName=="Music"){
         let currDockIcon = document.querySelector(`.dockIcon[dockapp="${dockAppName}"]`)
@@ -707,6 +765,30 @@ let divScreenContainer = document.querySelector('.screenContainer');
         currDockIcon.addEventListener("click",function(e){
             let currDockIcon=document.querySelector('.dockIcon[dockapp="Calculator"]');
             calculator(currDockIcon);
+        })
+    }else if(dockAppName=="Gallery"){
+        let currDockIcon = document.querySelector(`.dockIcon[dockapp="${dockAppName}"]`)
+
+        dockIconDblClick(currDockIcon,dockAppName);             
+        currDockIcon.addEventListener("click",function(e){
+            let currDockIcon=document.querySelector('.dockIcon[dockapp="Gallery"]');
+            gallery(currDockIcon);
+        })
+    }else if(dockAppName=="CupHead"){
+        let currDockIcon = document.querySelector(`.dockIcon[dockapp="${dockAppName}"]`)
+
+        dockIconDblClick(currDockIcon,dockAppName);             
+        currDockIcon.addEventListener("click",function(e){
+            let currDockIcon=document.querySelector('.dockIcon[dockapp="CupHead"]');
+            cupHead(currDockIcon);
+        })
+    }else if(dockAppName=="PokemonCard"){
+        let currDockIcon = document.querySelector(`.dockIcon[dockapp="${dockAppName}"]`)
+
+        dockIconDblClick(currDockIcon,dockAppName);             
+        currDockIcon.addEventListener("click",function(e){
+            let currDockIcon=document.querySelector('.dockIcon[dockapp="PokemonCard"]');
+            pokemonCard(currDockIcon);
         })
     }
 

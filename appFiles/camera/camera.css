@@ -1,0 +1,267 @@
+
+@font-face{
+    font-family:'appleSemiBold';
+    src: url(../../font/appleFont/SF-Pro-Display-Semibold.otf);
+}
+
+*{
+    box-sizing: border-box;
+}
+.cameraBoxBox{
+    width: 45.05vw;
+}
+
+.camera-grid{
+    height: 84%;
+    width: 100%;
+    background-color: black;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    overflow: hidden;
+}
+.cameraGridBox{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.videoBox{
+    height: 100%;
+    width: 100%;
+}
+.camera-option-grid{
+    height: 12%;
+    width: 100%;
+    background: rgb(226,225,226);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.camera-left-box{
+    height:80%;
+    width: 25%;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.zoom-In{
+   background-color: rgb(255, 255, 255,0.8);
+    border-top: 1px solid rgb(185,185,186);
+    border-bottom: 1px solid rgb(185,185,186);
+    border-left: 1px solid rgb(185,185,186);
+    border-right: 1px solid rgb(185,185,186);
+    height:48%;
+    width: 13%;
+    border-radius: 0.5vw 0 0 0.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    color : rgb(145, 145, 145);
+}
+.zoom-In span{
+    font-weight:bolder;
+    font-size: 1.1vw;
+}
+.zoom-Out span{
+    font-weight:bolder;
+    font-size: 1.1vw;
+}
+
+
+
+.zoom-In:hover{
+    background-color: rgb(38, 132, 255);
+    color: white;
+}
+.zoom-Out{
+    background-color: rgb(255, 255, 255,0.8);
+    height:48%;
+    width: 13%;
+    border-top:  1px solid rgb(185,185,186);
+    border-bottom:  1px solid rgb(185,185,186);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    color : rgb(145, 145, 145);
+}
+.zoom-Out:hover{
+    background-color: rgb(38, 132, 255);
+    color: white;
+}
+.galleryBox{
+    background-color:  rgb(255, 255, 255,0.8);
+    height:48%;
+    width: 43%;
+    border: 1px solid rgb(185,185,186);
+    border-radius: 0 0.5vw 0.5vw 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color : rgb(145, 145, 145);
+}
+.galleryBox:hover{
+    background-color: rgb(38, 132, 255);
+    color: white;
+}
+
+.galleryBox span{
+    font-size: 0.9vw;
+}
+
+.galleryBoxFont{
+    font-size: 0.9vw;
+    margin-left: 0.4vw;
+    font-family: apple;
+    font-weight: 500;
+}
+.camera-middle-box{
+    height: 100%;
+    width: 55%;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.camera-click-btn{
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.camera-click-img{
+    height: 90%;
+    width: 90%;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.shrink{
+    animation: shrink;
+    animation-duration: 0.5s;
+    animation-iteration-count:1;
+    position: absolute;
+    top: 50%;
+}
+@keyframes shrink{
+     0%{opacity: 0;}
+    100%{
+        opacity: 100%;
+    }
+  
+}
+
+.cameraRedCircle{
+    font-size: 10vh;
+    color: rgb(246,74,72);
+    /* border: 1px solid; */
+    margin-right: 1vw;
+
+    
+}
+.cameraImg{
+    position: absolute;
+    top: 50%;
+    transform: translate(-25%,-50%);
+    font-size: 2.2vw;
+    color: white;
+}
+.recordImg{
+    position: absolute;
+    top: 50%;
+    transform: translate(-25%,-50%);
+    font-size: 2.2vw;
+    color: white;
+}
+
+.onOf{
+    animation: onOf;
+    animation-duration: 0.5s;
+    animation-iteration-count:infinite;
+}
+@keyframes onOf{
+    0%{opacity: 0;}
+    100%{
+        opacity: 100%;
+    }
+  
+}
+
+.camera-right-box{
+    height:80%;
+    width: 20%;
+    /* border:1px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.camera-filter-box{
+    height: 48%;
+    width: 35%;
+    border: 1px solid rgb(185,185,186);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(145, 145, 145);
+    background-color: rgb(255, 255, 255,0.8);
+    border-radius: 0.4vw;
+    font-family: apple;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    font-size: 0.9vw;
+    font-weight: 500;
+
+}
+
+.camera-filter-box:hover{
+    background-color: rgb(38, 132, 255);
+    color: white;
+}
+
+
+.filterBox-container{
+    height: 12%;
+    width: 100%;
+    position: absolute;
+    bottom: 12%;
+    /* background-color: red; */
+    backdrop-filter: blur(3px);
+    /* border: 3px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    z-index: 3;
+}
+.filterBox{
+    height: 80%;
+    width: 8.5%;
+    margin-left: 1vw;
+    border-radius: 0.4vw;
+    background-image: url(https://images.unsplash.com/photo-1470434158598-88e7ad324132?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80);
+    background-blend-mode:color-burn;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.filterDivUi{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+}
+@media screen and (max-width: 770px){
+
+}
