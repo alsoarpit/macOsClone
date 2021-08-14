@@ -1,6 +1,6 @@
-let a1;
-let a1Clicked = false;
-let a2;
+let first=0;
+let first_id=0;
+let total_check = 0;
 function pokemonCard(currDockIcon){
     let appBox=`.box-box[appbox="PokemonCard"]`
     toRemoveLaunchPad();
@@ -83,37 +83,37 @@ function pokemonCard(currDockIcon){
         `
             <div class="divBlurBoxAndGameBox">
                 <div class="cardGameBox">
-                    <div class="board">
-                    <img class="boardImg" src="../../appFiles/pokemonCard/pokemonCardImage/Board.png">
-                    <img class="turnImg pikachu" src="../../appFiles/pokemonCard/pokemonCardImage/blank.png">
+                    <div class="board" imgNo="1" id="1" onClick=check(1,1)>
+                    <img class="boardImg"; src="../../appFiles/pokemonCard/pokemonCardImage/Board.png">
+                    <img class="turnImg"  src="../../appFiles/pokemonCard/pokemonCardImage/blank.png">
                     </div>
-                    <div class="board">
-                    <img class="boardImg" src="../../appFiles/pokemonCard/pokemonCardImage/Board.png">
-                    <img class="turnImg charmander" src="../../appFiles/pokemonCard/pokemonCardImage/blank.png">
+                    <div class="board" imgNo="2" id="2" onClick=check(2,2) >
+                    <img class="boardImg"  src="../../appFiles/pokemonCard/pokemonCardImage/Board.png">
+                    <img class="turnImg" src="../../appFiles/pokemonCard/pokemonCardImage/blank.png">
                     </div>
-                    <div class="board">
-                    <img class="boardImg" src="../../appFiles/pokemonCard/pokemonCardImage/Board.png">
-                    <img class="turnImg pikachu1" src="../../appFiles/pokemonCard/pokemonCardImage/blank.png">
+                    <div class="board" imgNo="1" id="3" onClick=check(1,3) >
+                    <img class="boardImg"  src="../../appFiles/pokemonCard/pokemonCardImage/Board.png">
+                    <img class="turnImg" src="../../appFiles/pokemonCard/pokemonCardImage/blank.png">
                     </div>
-                    <div class="board">
-                    <img class="boardImg" src="../../appFiles/pokemonCard/pokemonCardImage/Board.png">
-                    <img class="turnImg squirtle" src="../../appFiles/pokemonCard/pokemonCardImage/blank.png">
+                    <div class="board" imgNo="3" id="4" onClick=check(3,4)>
+                    <img class="boardImg"src="../../appFiles/pokemonCard/pokemonCardImage/Board.png">
+                    <img class="turnImg"  src="../../appFiles/pokemonCard/pokemonCardImage/blank.png">
                     </div>
-                    <div class="board">
-                    <img class="boardImg" src="../../appFiles/pokemonCard/pokemonCardImage/Board.png">
-                    <img class="turnImg jigglypuff" src="../../appFiles/pokemonCard/pokemonCardImage/blank.png">
+                    <div class="board" imgNo="4" id="5" onClick=check(4,5)>
+                    <img class="boardImg"  src="../../appFiles/pokemonCard/pokemonCardImage/Board.png">
+                    <img class="turnImg" src="../../appFiles/pokemonCard/pokemonCardImage/blank.png">
                     </div>
-                    <div class="board">
-                    <img class="boardImg" src="../../appFiles/pokemonCard/pokemonCardImage/Board.png">
-                    <img class="turnImg jigglypuff1" src="../../appFiles/pokemonCard/pokemonCardImage/blank.png">
+                    <div class="board" imgNo="4" id="6" onClick=check(4,6)>
+                    <img class="boardImg"  src="../../appFiles/pokemonCard/pokemonCardImage/Board.png">
+                    <img class="turnImg" src="../../appFiles/pokemonCard/pokemonCardImage/blank.png">
                     </div>
-                    <div class="board">
+                    <div class="board" imgNo="3" id="7" onClick=check(3,7)>
                     <img class="boardImg" src="../../appFiles/pokemonCard/pokemonCardImage/Board.png">
-                    <img class="turnImg squirtle1" src="../../appFiles/pokemonCard/pokemonCardImage/blank.png">
+                    <img class="turnImg" src="../../appFiles/pokemonCard/pokemonCardImage/blank.png">
                     </div>
-                    <div class="board">
-                    <img class="boardImg" src="../../appFiles/pokemonCard/pokemonCardImage/Board.png">
-                    <img class="turnImg charmander1" src="../../appFiles/pokemonCard/pokemonCardImage/blank.png">
+                    <div class="board" imgNo="2" id="8" onClick=check(2,8) >
+                    <img class="boardImg"  src="../../appFiles/pokemonCard/pokemonCardImage/Board.png">
+                    <img class="turnImg" src="../../appFiles/pokemonCard/pokemonCardImage/blank.png">
                     </div>
                   
                     
@@ -121,6 +121,7 @@ function pokemonCard(currDockIcon){
                 <diV class="WobbufetBox"> 
                     <img class="WobbufetImg" src="../../appFiles/pokemonCard/pokemonCardImage/Wobbufet.png" alt="Wobbufet">
                 </div>
+                
                 <diV class="extraImageBox">
                     <div class="lehaBox lehaEntryAni"> 
                         <img class="lehaBoxImg" src="../../appFiles/pokemonCard/pokemonCardImage/Leah1.png" alt="leha">
@@ -134,6 +135,7 @@ function pokemonCard(currDockIcon){
             <div>
         `
         
+     
         
         let lehaBoxImg = pokemonCardAppSiteBox.querySelector(".lehaBoxImg");
         setInterval(()=>{
@@ -147,129 +149,108 @@ function pokemonCard(currDockIcon){
             }
         },800)
 
-        let pikachu = pokemonCardAppSiteBox.querySelector('.pikachu');
-        pikachu.parentNode.addEventListener("click",function(e){
-          
-            setTimeout(()=>{
-                pikachu.parentNode.classList.remove('flipAni');
-            },500)
-            if(pikachu.getAttribute('src')=="../../appFiles/pokemonCard/pokemonCardImage/pikachu.png"){
-                  pikachu.parentNode.classList.add("flipAni");
-                pikachu.setAttribute("src","../../appFiles/pokemonCard/pokemonCardImage/blank.png")
-                return
-            }
-            pikachu.parentNode.classList.add("flipAni");
-            pikachu.setAttribute("src","../../appFiles/pokemonCard/pokemonCardImage/pikachu.png")
-
-        })
-       
-        let charmander = pokemonCardAppSiteBox.querySelector('.charmander');
-        charmander.parentNode.addEventListener("click",function(){
-           
-            
-            setTimeout(()=>{
-                charmander.parentNode.classList.remove('flipAni');
-            },500)
-            if(charmander.getAttribute('src')=="../../appFiles/pokemonCard/pokemonCardImage/charmander.png"){
-                charmander.parentNode.classList.add("flipAni");
-                charmander.setAttribute("src","../../appFiles/pokemonCard/pokemonCardImage/blank.png")
-                return
-            }
-            charmander.parentNode.classList.add("flipAni");
-            charmander.setAttribute("src","../../appFiles/pokemonCard/pokemonCardImage/charmander.png")
-        })
-        let charmander1 = pokemonCardAppSiteBox.querySelector('.charmander1');
-        charmander1.parentNode.addEventListener("click",function(){
-            
-            setTimeout(()=>{
-                charmander1.parentNode.classList.remove('flipAni');
-            },500)
-            if(charmander1.getAttribute('src')=="../../appFiles/pokemonCard/pokemonCardImage/charmander.png"){
-                charmander1.parentNode.classList.add("flipAni");
-                charmander1.setAttribute("src","../../appFiles/pokemonCard/pokemonCardImage/blank.png")
-                return
-            }
-            charmander1.parentNode.classList.add("flipAni");
-            charmander1.setAttribute("src","../../appFiles/pokemonCard/pokemonCardImage/charmander.png")
-        })
-        let jigglypuff = pokemonCardAppSiteBox.querySelector('.jigglypuff');
-        jigglypuff.parentNode.addEventListener("click",function(){
-           
-            setTimeout(()=>{
-                jigglypuff.parentNode.classList.remove('flipAni');
-            },500)
-            if(jigglypuff.getAttribute('src')=="../../appFiles/pokemonCard/pokemonCardImage/jigglypuff.png"){
-                jigglypuff.parentNode.classList.add("flipAni");
-                jigglypuff.setAttribute("src","../../appFiles/pokemonCard/pokemonCardImage/blank.png")
-                return
-            }
-            jigglypuff.parentNode.classList.add("flipAni");
-            jigglypuff.setAttribute("src","../../appFiles/pokemonCard/pokemonCardImage/jigglypuff.png")
-        })
-        let jigglypuff1 = pokemonCardAppSiteBox.querySelector('.jigglypuff1');
-        jigglypuff1.parentNode.addEventListener("click",function(e){
-            
-           
-            setTimeout(()=>{
-                jigglypuff1.parentNode.classList.remove('flipAni');
-            },500)
-            if(jigglypuff1.getAttribute('src')=="../../appFiles/pokemonCard/pokemonCardImage/jigglypuff.png"){
-                jigglypuff1.parentNode.classList.add("flipAni");
-                jigglypuff1.setAttribute("src","../../appFiles/pokemonCard/pokemonCardImage/blank.png")
-                return
-            }
-            jigglypuff1.parentNode.classList.add("flipAni");
-            jigglypuff1.setAttribute("src","../../appFiles/pokemonCard/pokemonCardImage/jigglypuff.png")
-        })
-
-        let squirtle = pokemonCardAppSiteBox.querySelector('.squirtle');
-        squirtle.parentNode.addEventListener("click",function(e){
-
-            squirtle.parentNode.classList.add("flipAni");
-            setTimeout(()=>{
-                squirtle.parentNode.classList.remove('flipAni');
-            },500)
-            if(squirtle.getAttribute('src')=="../../appFiles/pokemonCard/pokemonCardImage/squirtle.png"){
-                squirtle.parentNode.classList.add("flipAni");
-                squirtle.setAttribute("src","../../appFiles/pokemonCard/pokemonCardImage/blank.png")
-                return
-            }
-            squirtle.parentNode.classList.add("flipAni");
-            squirtle.setAttribute("src","../../appFiles/pokemonCard/pokemonCardImage/squirtle.png")
-        })
-        
-        let squirtle1 = pokemonCardAppSiteBox.querySelector('.squirtle1');
-        squirtle1.parentNode.addEventListener("click",function(e){
-            squirtle1.parentNode.classList.add("flipAni");
-            setTimeout(()=>{
-                squirtle1.parentNode.classList.remove('flipAni');
-            },500)
-            if(squirtle1.getAttribute('src')=="../../appFiles/pokemonCard/pokemonCardImage/squirtle.png"){
-                squirtle1.parentNode.classList.add("flipAni");
-                squirtle1.setAttribute("src","../../appFiles/pokemonCard/pokemonCardImage/blank.png")
-                return
-            }
-            squirtle1.parentNode.classList.add("flipAni");
-            squirtle1.setAttribute("src","../../appFiles/pokemonCard/pokemonCardImage/squirtle.png")
-        })
-       
-        let pikachu1 = pokemonCardAppSiteBox.querySelector('.pikachu1');
-        pikachu1.parentNode.addEventListener("click",function(e){
-            
-            setTimeout(()=>{
-                pikachu1.parentNode.classList.remove('flipAni');
-            },500)
-            if(pikachu1.getAttribute('src')=="../../appFiles/pokemonCard/pokemonCardImage/pikachu.png"){
-                pikachu1.parentNode.classList.add("flipAni");
-                pikachu1.setAttribute("src","../../appFiles/pokemonCard/pokemonCardImage/blank.png")
-                return
-            }
-            pikachu1.parentNode.classList.add("flipAni");
-            pikachu1.setAttribute("src","../../appFiles/pokemonCard/pokemonCardImage/pikachu.png")
-        })
-       
-
     })
 
+    
+}
+
+function check(imgNo,k){
+    if(first_id!=k){
+        if(first==0){
+            first=imgNo;
+            first_id=k;
+           let imgBox= document.getElementById(`${k}`);
+           imgBox.classList.add('flipAni');
+           imgBox.innerHTML=`
+           <img class="boardImg"; src="../../appFiles/pokemonCard/pokemonCardImage/Board.png">
+                        <img class="turnImg"  src="../../appFiles/pokemonCard/pokemonCardImage/${imgNo}.png">
+           `
+        }else{
+            if(first==imgNo){
+                let imgBox= document.getElementById(`${k}`);
+                imgBox.classList.add('flipAni');
+                imgBox.innerHTML=`
+                <img class="boardImg"; src="../../appFiles/pokemonCard/pokemonCardImage/Board.png">
+                             <img class="turnImg"  src="../../appFiles/pokemonCard/pokemonCardImage/${imgNo}.png">
+                `
+
+
+                let imgBox1= document.getElementById(`${first_id}`).removeAttribute("onClick");
+                let imgBox2= document.getElementById(`${k}`).removeAttribute("onClick");
+
+                total_check++;
+               if(total_check==4){
+                setTimeout(()=>{
+                        
+                    let pokemonCardAppSiteBox = document.querySelector('.pokemonCard-appSiteBox');
+                    pokemonCardAppSiteBox.innerHTML=
+                    `   
+                        <div class="divBlurBoxAndGameBox">
+                        <div class="wonDiv">
+
+                        </div>
+                        <diV class="WobbufetBox"> 
+                            <img class="WobbufetImg" src="../../appFiles/pokemonCard/pokemonCardImage/Wobbufet.png" alt="Wobbufet">
+                        </div>
+                        
+                        <diV class="extraImageBox">
+                            <div class="lehaBox lehaEntryAni"> 
+                                <img class="lehaBoxImg" src="../../appFiles/pokemonCard/pokemonCardImage/Leah1.png" alt="leha">
+                            </div>
+                            <div class="pikaJumpContainer">
+                                <div class="pikaJump">
+                                    <img class="pikaJumpImg" src="../../appFiles/pokemonCard/pokemonCardImage/pikaJump.png" alt="pikaJump">
+                                </div>
+                            </div>
+                        </diV>
+                    <div>
+                    `
+
+                    let lehaBoxImg = pokemonCardAppSiteBox.querySelector(".lehaBoxImg");
+                    setInterval(()=>{
+                        if(lehaBoxImg.getAttribute('src')=="../../appFiles/pokemonCard/pokemonCardImage/Leah1.png"){
+                            
+                            lehaBoxImg.setAttribute('src',"../../appFiles/pokemonCard/pokemonCardImage/Leah2.png")
+                        
+                        }else{
+                            lehaBoxImg.setAttribute('src',"../../appFiles/pokemonCard/pokemonCardImage/Leah1.png")
+                        
+                        }
+                    },800)
+                    },500)
+               }
+            }else{
+                let imgBox= document.getElementById(`${k}`);
+                imgBox.classList.add('flipAni');
+                imgBox.innerHTML=`
+                <img class="boardImg"; src="../../appFiles/pokemonCard/pokemonCardImage/Board.png">
+                             <img class="turnImg"  src="../../appFiles/pokemonCard/pokemonCardImage/${imgNo}.png">
+                `
+    
+                setTimeout(()=>{
+                    let imgBox1= document.getElementById(`${first_id}`);
+                    if(imgBox1.classList.contains('flipAni')){
+                        imgBox1.classList.remove('flipAni');
+                    }
+                    imgBox1.innerHTML=`
+                    <img class="boardImg"; src="../../appFiles/pokemonCard/pokemonCardImage/Board.png">
+                                 <img class="turnImg"  src="../../appFiles/pokemonCard/pokemonCardImage/blank.png">
+                    `
+    
+    
+                    let imgBox2= document.getElementById(`${k}`);
+                    if(imgBox2.classList.contains('flipAni')){
+                        imgBox2.classList.remove('flipAni');
+                    }
+                    imgBox2.innerHTML=`
+                    <img class="boardImg"; src="../../appFiles/pokemonCard/pokemonCardImage/Board.png">
+                                 <img class="turnImg"  src="../../appFiles/pokemonCard/pokemonCardImage/blank.png">
+                    `
+                    first_id=0;
+                },500)
+            }
+            first=0;
+        }
+    }
     
 }

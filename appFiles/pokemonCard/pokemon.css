@@ -109,6 +109,7 @@
     animation-duration: 1s;
     animation-timing-function: linear;
     animation-iteration-count: 1;
+    z-index: 1;
 }
 
 @keyframes boardAni{
@@ -125,7 +126,6 @@
     animation-timing-function: linear;
     animation-iteration-count: 1;   
 }
-
 @keyframes flipAni{
     0%{
       transform: rotateY(180deg);
@@ -226,8 +226,12 @@
 .WobbufetImg{
     height: 80%;
     transform: rotate(34deg);
-
 }
 
-
-
+.wonDiv{
+    height: 100%;
+    width: 100%;
+   background-image: url(./pokemonCardImage/won);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
