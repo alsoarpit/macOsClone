@@ -247,7 +247,7 @@ function check(imgNo,k){
                                  <img class="turnImg"  src="../../appFiles/pokemonCard/pokemonCardImage/blank.png">
                     `
                     first_id=0;
-                },500)
+                },400)
             }
             first=0;
         }

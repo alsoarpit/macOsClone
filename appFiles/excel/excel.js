@@ -893,7 +893,7 @@ function excelApp(currDockIcon){
                 return;
             }
             file.style.backgroundColor = "#cbcbce"; 
-            file.style.color ="rgb(95,99,104)";
+           
             let div =  document.createElement('div');
             div.classList.add('fileM');
             let div2 = document.createElement('div');
@@ -907,18 +907,22 @@ function excelApp(currDockIcon){
             fileBoxArea.append(div);
 
             div2.addEventListener("click",function(){
+              
                 localStorage.setItem('excelSheet',JSON.stringify(objData));
                 let fileNew = document.querySelector('.fileBox');
                 fileNew.style.backgroundColor ="";
+      
                 let fileM = document.querySelector('.fileM');
                 setTimeout(function(){
                     div.parentNode.removeChild(div);
                 },20)
             })
-            div3.addEventListener("click",function(){   
+            div3.addEventListener("click",function(){
+          
                 localStorage.setItem('excelSheet','');
                 let fileNew = document.querySelector('.fileBox');
                 fileNew.style.backgroundColor ="";
+            
                 let fileM = document.querySelector('.fileM');
                 setTimeout(function(){
                     div.parentNode.removeChild(div);

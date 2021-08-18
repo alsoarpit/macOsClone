@@ -1,10 +1,12 @@
-let permissionToUseCameraAudio;
+
+let gumStream;
 let chunks=[];
 let mediaRecorder;
 let isMediaRecording;
 let filter;
 let currZoom =1;
 function camera(currDockIcon){
+
     let appBox=`.box-box[appbox="Camera"]`
     toRemoveLaunchPad();
     currDockIcon.style.animation="box 1s  alternate";
@@ -98,6 +100,69 @@ function camera(currDockIcon){
             </div>
         </div>
     `
+
+
+
+    let galleryBox = div.querySelector('.galleryBox');
+    galleryBox.addEventListener("click",function(){
+
+        let appName ='Gallery';
+        let dockIcon = document.querySelectorAll(".dockIcon");
+                    for(let i=0;i<dockIcon.length;i++){
+                        let checkAppDock =  dockIcon[i].querySelector(`[alt="${appName}"]`);
+                        if(checkAppDock){
+                            if(appName=="Gallery"){
+                                toRemoveLaunchPad();
+                                let launchPadDockIcon = document.querySelector('.dockIcon[dockapp="Launch"]')
+                                launchPadDockIcon.removeAttribute('style');
+                                let appBox=`.box-box[appbox="Gallery"]`;
+                                let boxBox = document.querySelector(appBox);
+                                    if(boxBox){
+                                        let styleCheck = boxBox.getAttribute('style');
+                                        if(styleCheck && styleCheck.includes("display: none;")){
+                                            let currDockIcon = document.querySelector(`.dockIcon[dockApp="${appName}"]`);
+                                            currDockIcon.removeAttribute("style");
+                                            setTimeout(function(){
+                                                currDockIcon.style.animation = 'box 1s  alternate';
+                                                boxBox.style.display="block";
+                                                return; 
+                                            },220)  
+                                        }
+                                    }
+                                let currDockIcon = document.querySelector(`.dockIcon[dockApp="${appName}"]`)
+                                gallery(currDockIcon);
+                                return
+                            }
+                        }
+                    } 
+                    let dockEditable = document.querySelector(".dockIcon-editable");
+                    let div = document.createElement("div");
+                    div.classList ="dockIcon";
+                    div.setAttribute("dockApp",`${appName}`)
+                    div.innerHTML = `<img src="./images/${appName}.png" alt="${appName}">`
+                    dockEditable.append(div);
+                     if(appName=="Gallery"){
+                        let cameraDockIcon = document.querySelector('.dockIcon[dockapp="Gallery"]');
+                       
+                        cameraDockIcon.addEventListener("click",function(e){
+                            let currDockIcon=document.querySelector('.dockIcon[dockapp="Gallery"]');
+                                if(e.detail==3){
+                                    let boxBox = document.querySelector(`.box-box[appbox="Gallery"]`);
+                                    setTimeout(()=>{
+                                        boxBox.parentNode.removeChild(boxBox);
+                                        currDockIcon.parentNode.removeChild(currDockIcon);
+                                    },220);
+                                }else{
+                                    gallery(currDockIcon);
+                                }
+                        })
+                        dockIconDblClick(cameraDockIcon,appName);
+
+                        gallery(cameraDockIcon);
+                    }
+
+    })
+
     divScreenContainer.append(div);
 
     
@@ -124,11 +189,12 @@ function camera(currDockIcon){
 
 
     let videoPlayer = document.querySelector('.videoBox');
+   
     let permissionToUseCameraAudio = navigator.mediaDevices.getUserMedia({
         video:true,
         audio:true,
     })
-
+   
     let zoomIn =  document.querySelector('.zoom-In');
     zoomIn.addEventListener("click",function(){
         currZoom = currZoom+0.1;
@@ -228,14 +294,16 @@ function camera(currDockIcon){
                 tool.fillRect(0,0,canvas.width,canvas.height);
             }
     
-            body.append(canvas);
+         
             let url = canvas.toDataURL();
-            let link = url;
-                let a= document.createElement('a');
-                a.href = link;
-                a.download = "Image.png";
-                a.click();
-                a.remove();
+            canvas.remove();
+            saveMedia(url);
+            // let link = url;
+            //     let a= document.createElement('a');
+            //     a.href = link;
+            //     a.download = "Image.png";
+            //     a.click();
+            //     a.remove();
         })
 
         let recordBtn = document.querySelector('.camera-record-btn');
@@ -272,11 +340,12 @@ function camera(currDockIcon){
             mediaRecorder.addEventListener('stop',function(e){
                 let blob = new Blob(chunks,{type:'video/mp4'});
                 chunks=[];
-                let link = URL.createObjectURL(blob);
-                let a= document.createElement('a');
-                a.href = link;
-                a.download = "Video.mp4";
-                a.click();
+                saveMedia(blob);
+                // let link = URL.createObjectURL(blob);
+                // let a= document.createElement('a');
+                // a.href = link;
+                // a.download = "Video.mp4";
+                // a.click();
             })
 
 

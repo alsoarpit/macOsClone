@@ -703,7 +703,6 @@ let divScreenContainer = document.querySelector('.screenContainer');
     else if(dockAppName=="Excel"){
 
         let currDockIcon = document.querySelector(`.dockIcon[dockapp="${dockAppName}"]`)
-
         dockIconDblClick(currDockIcon,dockAppName);             
         currDockIcon.addEventListener("click",function(e){
             let currDockIcon=document.querySelector('.dockIcon[dockapp="Excel"]');

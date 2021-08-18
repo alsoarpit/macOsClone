@@ -155,6 +155,7 @@
     overflow: hidden;
 }
 .excelSave:hover{
+    color: rgb(94,94,94);
     background-color:rgb(223, 228, 234 ,0.8);
 }
 .optionBarTextBox{

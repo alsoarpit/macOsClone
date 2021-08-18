@@ -60,6 +60,17 @@ function cancelCircle(currDockIcon,appBox){
     let checkBox = document.querySelector(appBox);
     let checkBoxDot =  checkBox.getAttribute('appbox')
     cancelCircle.addEventListener("click",function(){
+
+        if(erase){
+            erase=false;
+        }
+        if(isDrawing){
+            isDrawing=false;
+        }
+        if(color){
+            color="black";
+        }
+
         let boxBox = document.querySelector(appBox);
         boxBox.removeAttribute('style');
         boxBox.classList.add("box-exit-ani");
