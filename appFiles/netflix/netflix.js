@@ -204,7 +204,6 @@ function netflix(currDockIcon){
                            arrow_forward_ios
                            </span>
                        </div>
-                           
                    </div>
                         
                 </div>
