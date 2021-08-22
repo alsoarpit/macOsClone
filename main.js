@@ -481,6 +481,31 @@ let divScreenContainer = document.querySelector('.screenContainer');
                                         }
                                     }
 
+                                    if(checkAppDock){
+                                        if(appName=="Netflix"){
+                                            toRemoveLaunchPad();
+                                            let launchPadDockIcon = document.querySelector('.dockIcon[dockapp="Launch"]')
+                                            launchPadDockIcon.removeAttribute('style');
+                                            let appBox=`.box-box[appbox="Netflix"]`;
+                                            let boxBox = document.querySelector(appBox);
+                                                if(boxBox){
+                                                    let styleCheck = boxBox.getAttribute('style');
+                                                    if(styleCheck && styleCheck.includes("display: none;")){
+                                                        let currDockIcon = document.querySelector(`.dockIcon[dockApp="${appName}"]`);
+                                                        currDockIcon.removeAttribute("style");
+                                                        setTimeout(function(){
+                                                            currDockIcon.style.animation = 'box 1s  alternate';
+                                                            boxBox.style.display="block";
+                                                            return; 
+                                                        },220)  
+                                                    }
+                                                }
+                                            let currDockIcon = document.querySelector(`.dockIcon[dockApp="${appName}"]`)
+                                            netflix(currDockIcon);
+                                            return
+                                        }
+                                    }
+
 
                                     
                                 } 
@@ -694,7 +719,26 @@ let divScreenContainer = document.querySelector('.screenContainer');
                                     dockIconDblClick(cameraDockIcon,appName);
 
                                     pokemonCard(cameraDockIcon);
+                                }else if(appName=="Netflix"){
+                                    let cameraDockIcon = document.querySelector('.dockIcon[dockapp="Netflix"]');
+                                   
+                                    cameraDockIcon.addEventListener("click",function(e){
+                                        let currDockIcon=document.querySelector('.dockIcon[dockapp="Netflix"]');
+                                            if(e.detail==3){
+                                                let boxBox = document.querySelector(`.box-box[appbox="Netflix"]`);
+                                                setTimeout(()=>{
+                                                    boxBox.parentNode.removeChild(boxBox);
+                                                    currDockIcon.parentNode.removeChild(currDockIcon);
+                                                },220);
+                                            }else{
+                                                netflix(currDockIcon);
+                                            }
+                                    })
+                                    dockIconDblClick(cameraDockIcon,appName);
+
+                                    netflix(cameraDockIcon);
                                 }
+                                
 
                 });
             }
@@ -788,6 +832,14 @@ let divScreenContainer = document.querySelector('.screenContainer');
         currDockIcon.addEventListener("click",function(e){
             let currDockIcon=document.querySelector('.dockIcon[dockapp="PokemonCard"]');
             pokemonCard(currDockIcon);
+        })
+    }else if(dockAppName=="Netflix"){
+        let currDockIcon = document.querySelector(`.dockIcon[dockapp="${dockAppName}"]`)
+
+        dockIconDblClick(currDockIcon,dockAppName);             
+        currDockIcon.addEventListener("click",function(e){
+            let currDockIcon=document.querySelector('.dockIcon[dockapp="Netflix"]');
+            netflix(currDockIcon);
         })
     }
 

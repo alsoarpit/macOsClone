@@ -1,0 +1,375 @@
+
+@font-face{
+    font-family:'bebasNeueBold';
+    src: url("./Netflix\ Sans\ Bold.otf") format("opentype");
+}
+@font-face{
+    font-family:'bebasNeueLight';
+    src: url("./Netflix\ Sans\ Light.otf") format("opentype");
+}
+@font-face{
+    font-family:'bebasNeueMedium';
+    src: url("./Netflix\ Sans\ Medium.otf") format("opentype");
+}
+@font-face{
+    font-family:'bebasNeueRegular';
+    src: url("./NetflixSans-Regular.otf") format("opentype");
+}
+@font-face{
+    font-family:'bebasNeueThin';
+    src: url("./NetflixSans-Thin.otf") format("opentype");
+}
+.netflix-appSiteBox{
+    height: 96%;
+    width: 100%;
+    overflow: auto;
+}
+.inner-netflix-appSiteBox-container{
+    height: 100%;
+    width: 100%;
+    background-image: url(./image/bg.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.inner-netflix-appSiteBox-box{
+    height: 100%;
+    width: 100%;
+    background-image: url(./image/bgUpper.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 8px solid rgba(53, 53, 53);
+}
+.netflix-tv-container{
+    height: 480px;
+    width: 100%;
+    /* border: 2px solid red; */
+    background-color: black;
+    border-bottom: 8px solid rgba(53, 53, 53);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.netflix-tv-text{
+    height: 100%;
+    width: 50%;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.netflix-tv-text-box1-leftSide{
+    height: 15%;
+    width: 75%;
+    /* border: 1px solid white; */
+    color: white;
+    font-size: 50px;
+    font-family: bebasNeueMedium;
+    position: relative;
+    margin-left: 55px;
+}
+.netflix-tv-text-box2-leftSide{
+    height: 15%;
+    width: 75%;
+    /* border: 1px solid white; */
+    color: white;
+    font-size: 25px;
+    font-family: bebasNeueRegular;
+    position: relative;
+    margin-left: 55px;
+}
+
+
+.netflix-tv-text-box1-rightSide{
+    height: 28%;
+    width: 83.7%;
+    /* border: 1px solid white; */
+    color: white;
+    font-size: 50px;
+    font-family: bebasNeueMedium;
+    position: relative;
+    
+}
+.netflix-tv-text-box2-rightSide{
+    height: 15%;
+    width: 75%;
+    /* border: 1px solid white; */
+    color: white;
+    font-size: 25px;
+    font-family: bebasNeueRegular;
+    position: relative;
+    margin-right: 55px;
+}
+
+.netflix-tv-img{
+    height: 100%;
+    width: 50%;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+}
+
+.netflix-tv-img img{
+    height: 85%;
+    position: relative;
+    left: -40px;
+    /* border: 2px solid white; */
+}
+.androidImg img{
+    left: 40px;
+}
+.macImg img{
+    height: 88%;
+    top:40px
+}
+.childImg img{
+    top:40px;
+    left:40px;
+}
+
+.netflix-qNA-container{
+    height: 130%;
+    width: 100%;
+    border-bottom: 8px solid rgba(53, 53, 53);
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.netflix-logo-Div{
+    height: 20%;
+    width: 100%;
+    /* border: 1px solid white; */
+    display: flex;
+    position: relative;
+}
+.netflix-logo{
+    height: 81.5%;
+    width: 17.6%;
+    /* border: 1px solid yellow; */
+    position: absolute;
+    left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -10px;
+}
+.netflix-logo img{
+    height: 80%;
+    /* border: 1px solid white; */
+}
+.netflix-logo-rightBox{
+    height: 81.5%;
+    width: 20%;
+    /* border: 1px solid yellow; */
+    position: absolute;
+    right: 25px;
+    top: -12px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.netflix-logo-rightBox-lang{
+    height: 38%;
+    width: 35%;
+    border: 1px solid white;
+    border-radius: 3px;
+    font-family: bebasNeueLight;
+    font-weight: 600;
+    font-size: 15px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.netflix-logo-rightBox-lang span{
+    font-size: 15px;
+    margin-right: 5px;
+}
+.netflix-logo-rightBox-signIn{
+    height: 38%;
+    width: 35%;
+    /* border: 1px solid white; */
+    background-color: rgb(229,8,21);
+    border-radius: 3px;
+    font-family: bebasNeueLight;
+    font-weight: 600;
+    font-size: 15px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.netflix-center-content-container{
+    height: 80%;
+    width: 100%;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+}
+.netflix-center-content-Box{
+    height: 90%;
+    width: 80%;
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.netflix-center-text1{
+    height: 40%;
+    width: 65%;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: bebasNeueMedium;
+    font-weight: 300;
+    font-size: 60.5px;
+   
+}
+.netflix-center-text2{
+    height: 8%;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid yellow; */
+    color: white;
+    font-family: bebasNeueRegular;
+    
+    font-size: 24.5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+}
+.netflix-center-text3{
+    height: 12%;
+    width: 65%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid; */
+    font-family: bebasNeueLight;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.netflix-center-gmailBox{
+    height: 19%;
+    width: 60%;
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: space-evenly;
+}
+.netflix-center-text3-2{
+    height: 9%;
+    width: 65%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid white; */
+    font-family: bebasNeueLight;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.netflix-center-gmailBox2{
+    height: 10.5%;
+    width: 50%;
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: space-evenly;
+}
+.inner-netflix-center-gmailBox{
+    height: 80%;
+    width:65%;
+   background-color: white;
+    font-size: 18px;
+    font-family: bebasNeueLight;
+    text-align: center;
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+    color: rgb(151,141,141);
+   
+}
+.inner-netflix-center-startBox{
+    height: 80%;
+    width:34.7%;
+    background-color: rgb(229,8,21);
+    font-size: 25px;
+    font-family: bebasNeueMedium;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+    color: white;
+    align-items: center;
+}
+
+.netflix-getStartText{
+    font-size: 25px;
+    margin-left: 15px;
+    font-weight: 100;
+    margin-top: 2px;
+}
+.netflix-qNA-container-box1{
+    height: 18%;
+    width: 100%;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: bebasNeueBold;
+    font-weight: 300;
+    font-size: 45px;
+}
+.netflix-qNA-container-qNA-box{
+    height: 72px;
+    width: 650px;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(49,49,48);
+    margin-bottom: 10px;
+}
+.qna-TextBox{
+    height: 90%;
+    width: 72%;
+    /* border: 1px solid white; */
+    color: white;
+    font-family: bebasNeueRegular;
+    font-size:25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.qna-Symbol{
+    height: 90%;
+    width: 22%;
+    /* border: 1px solid white; */
+    color: white;
+    font-size:50px;
+    display: flex;
+    font-family: bebasNeueThin;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+}

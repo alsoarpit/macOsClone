@@ -1,0 +1,609 @@
+
+.img-apps {
+  background-image: url("/in/music/images/overview/appsfromapple__ccg14s8qy6qa_large.jpg");
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min-resolution: 1.5dppx),
+  (-webkit-min-device-pixel-ratio: 1.5),
+  (min-resolution: 144dpi) {
+  .img-apps {
+    background-image: url("/in/music/images/overview/appsfromapple__ccg14s8qy6qa_large_2x.jpg");
+  }
+}
+
+@media only screen and (max-width: 1068px) {
+  .img-apps {
+    background-image: url("/in/music/images/overview/appsfromapple__ccg14s8qy6qa_medium.jpg");
+  }
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
+  only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+  .img-apps {
+    background-image: url("/in/music/images/overview/appsfromapple__ccg14s8qy6qa_medium_2x.jpg");
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .img-apps {
+    background-image: url("/in/music/images/overview/appsfromapple__ccg14s8qy6qa_small.jpg");
+  }
+}
+
+@media only screen and (max-width: 734px) and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (max-width: 734px) and (min-resolution: 1.5dppx),
+  only screen and (max-width: 734px) and (min-resolution: 144dpi) {
+  .img-apps {
+    background-image: url("/in/music/images/overview/appsfromapple__ccg14s8qy6qa_small_2x.jpg");
+  }
+}
+
+.img-ipod {
+  background-image: url("/in/music/images/overview/ipod__d53klaz6zj42_large.jpg");
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (min-resolution: 1.5dppx),
+  (-webkit-min-device-pixel-ratio: 1.5),
+  (min-resolution: 144dpi) {
+  .img-ipod {
+    background-image: url("/in/music/images/overview/ipod__d53klaz6zj42_large_2x.jpg");
+  }
+}
+
+@media only screen and (max-width: 1068px) {
+  .img-ipod {
+    background-image: url("/in/music/images/overview/ipod__d53klaz6zj42_medium.jpg");
+  }
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
+  only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+  .img-ipod {
+    background-image: url("/in/music/images/overview/ipod__d53klaz6zj42_medium_2x.jpg");
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .img-ipod {
+    background-image: url("/in/music/images/overview/ipod__d53klaz6zj42_small.jpg");
+  }
+}
+
+@media only screen and (max-width: 734px) and (-webkit-min-device-pixel-ratio: 1.5),
+  only screen and (max-width: 734px) and (min-resolution: 1.5dppx),
+  only screen and (max-width: 734px) and (min-resolution: 144dpi) {
+  .img-ipod {
+    background-image: url("/in/music/images/overview/ipod__d53klaz6zj42_small_2x.jpg");
+  }
+}
+.tile-airpods .img-airpods {
+    margin-left: auto;
+    margin-right: auto;
+}
+.tile-full .tile-content.tile-airpods {
+  padding:58px 0 0;
+  background-color: #FAFAFA;
+}
+/*hero screen localisation code*/
+.img-hero-mac {
+    background-image: url("/in/music/images/overview/hero_mac__fvs565lr1l6q_large.jpg");
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 1.5dppx),
+(-webkit-min-device-pixel-ratio: 1.5),
+(min-resolution: 144dpi) {
+    .img-hero-mac {
+        background-image: url("/in/music/images/overview/hero_mac__fvs565lr1l6q_large_2x.jpg")
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .img-hero-mac {
+        background-image: url("/in/music/images/overview/hero_mac__fvs565lr1l6q_medium.jpg")
+    }
+}
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
+only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+    .img-hero-mac {
+        background-image: url("/in/music/images/overview/hero_mac__fvs565lr1l6q_medium_2x.jpg")
+    }
+}
+@media only screen and (max-width: 734px) {
+    .img-hero-mac {
+        background-image: url("/in/music/images/overview/hero_mac__fvs565lr1l6q_small.jpg")
+    }
+}
+@media only screen and (max-width: 734px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 734px) and (min-resolution: 1.5dppx),
+only screen and (max-width: 734px) and (min-resolution: 144dpi) {
+    .img-hero-mac {
+        background-image: url("/in/music/images/overview/hero_mac__fvs565lr1l6q_small_2x.jpg")
+    }
+}
+.img-hero-watch {
+    background-image: url("/in/music/images/overview/hero_watch__bpwxvc2rb81y_large.jpg");
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 1.5dppx),
+(-webkit-min-device-pixel-ratio: 1.5),
+(min-resolution: 144dpi) {
+    .img-hero-watch {
+        background-image: url("/in/music/images/overview/hero_watch__bpwxvc2rb81y_large_2x.jpg")
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .img-hero-watch {
+        background-image: url("/in/music/images/overview/hero_watch__bpwxvc2rb81y_medium.jpg")
+    }
+}
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
+only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+    .img-hero-watch {
+        background-image: url("/in/music/images/overview/hero_watch__bpwxvc2rb81y_medium_2x.jpg")
+    }
+}
+@media only screen and (max-width: 734px) {
+    .img-hero-watch {
+        background-image: url("/in/music/images/overview/hero_watch__bpwxvc2rb81y_small.jpg")
+    }
+}
+@media only screen and (max-width: 734px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 734px) and (min-resolution: 1.5dppx),
+only screen and (max-width: 734px) and (min-resolution: 144dpi) {
+    .img-hero-watch {
+        background-image: url("/in/music/images/overview/hero_watch__bpwxvc2rb81y_small_2x.jpg")
+    }
+}
+.img-hero-ipad {
+    background-image: url("/in/music/images/overview/hero_ipad__c91e0j8hss8y_large.jpg");
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 1.5dppx),
+(-webkit-min-device-pixel-ratio: 1.5),
+(min-resolution: 144dpi) {
+    .img-hero-ipad {
+        background-image: url("/in/music/images/overview/hero_ipad__c91e0j8hss8y_large_2x.jpg")
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .img-hero-ipad {
+        background-image: url("/in/music/images/overview/hero_ipad__c91e0j8hss8y_medium.jpg")
+    }
+}
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
+only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+    .img-hero-ipad {
+        background-image: url("/in/music/images/overview/hero_ipad__c91e0j8hss8y_medium_2x.jpg")
+    }
+}
+@media only screen and (max-width: 734px) {
+    .img-hero-ipad {
+        background-image: url("/in/music/images/overview/hero_ipad__c91e0j8hss8y_small.jpg")
+    }
+}
+@media only screen and (max-width: 734px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 734px) and (min-resolution: 1.5dppx),
+only screen and (max-width: 734px) and (min-resolution: 144dpi) {
+    .img-hero-ipad {
+        background-image: url("/in/music/images/overview/hero_ipad__c91e0j8hss8y_small_2x.jpg")
+    }
+}
+.img-hero-iphone {
+    background-image: url("/in/music/images/overview/hero_iphone__bqfc5ws5v76q_large.jpg");
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 1.5dppx),
+(-webkit-min-device-pixel-ratio: 1.5),
+(min-resolution: 144dpi) {
+    .img-hero-iphone {
+        background-image: url("/in/music/images/overview/hero_iphone__bqfc5ws5v76q_large_2x.jpg")
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .img-hero-iphone {
+        background-image: url("/in/music/images/overview/hero_iphone__bqfc5ws5v76q_medium.jpg")
+    }
+}
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
+only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+    .img-hero-iphone {
+        background-image: url("/in/music/images/overview/hero_iphone__bqfc5ws5v76q_medium_2x.jpg")
+    }
+}
+@media only screen and (max-width: 734px) {
+    .img-hero-iphone {
+        background-image: url("/in/music/images/overview/hero_iphone__bqfc5ws5v76q_small.jpg")
+    }
+}
+@media only screen and (max-width: 734px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 734px) and (min-resolution: 1.5dppx),
+only screen and (max-width: 734px) and (min-resolution: 144dpi) {
+    .img-hero-iphone {
+        background-image: url("/in/music/images/overview/hero_iphone__bqfc5ws5v76q_small_2x.jpg")
+    }
+}
+
+.promo-tiles .tile-apple-one .tile-image { 
+    background-image: url("/in/music/images/overview/half_bundle__cs55h3qy54qe_large.jpg"); 
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .promo-tiles .tile-apple-one .tile-image {
+        background-image: url("/in/music/images/overview/half_bundle__cs55h3qy54qe_large_2x.jpg");
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .promo-tiles .tile-apple-one .tile-image {
+        background-image: url("/in/music/images/overview/half_bundle__cs55h3qy54qe_medium.jpg");
+    }
+}
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+    .promo-tiles .tile-apple-one .tile-image {
+        background-image: url("/in/music/images/overview/half_bundle__cs55h3qy54qe_medium_2x.jpg");
+    }
+}
+@media only screen and (max-width: 734px) and (max-width: 734px) {
+    .promo-tiles .tile-apple-one .tile-image {
+       
+        background-image: url("/in/music/images/overview/bundle__dur0y20z1b2a_small.jpg");
+    }
+}
+@media only screen and (max-width: 734px) and (max-width: 734px) and (-webkit-min-device-pixel-ratio: 1.5),
+    only screen and (max-width: 734px) and (max-width: 734px) and (min-resolution: 1.5dppx),
+    only screen and (max-width: 734px) and (max-width: 734px) and (min-resolution: 144dpi) {
+    .promo-tiles .tile-apple-one .tile-image {
+        background-image: url("/in/music/images/overview/bundle__dur0y20z1b2a_small_2x.jpg");
+    }
+}
+
+
+.apple-one .promo-image {
+
+    background-image: url("/in/music/images/overview/bundle__eqmvgz1saumq_large.jpg");
+
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 1.5dppx),
+(-webkit-min-device-pixel-ratio: 1.5),
+(min-resolution: 144dpi) {
+    .apple-one .promo-image {
+        background-image: url("/in/music/images/overview/bundle__eqmvgz1saumq_large_2x.jpg")
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .apple-one .promo-image {
+    
+        background-image: url("/in/music/images/overview/bundle__eqmvgz1saumq_medium.jpg")
+    }
+}
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
+only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+    .apple-one .promo-image {
+        background-image: url("/in/music/images/overview/bundle__eqmvgz1saumq_medium_2x.jpg")
+    }
+}
+@media only screen and (max-width: 734px) {
+    .apple-one .promo-image {
+       
+        background-image: url("/in/music/images/overview/bundle__eqmvgz1saumq_small.jpg")
+    }
+}
+@media only screen and (max-width: 734px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 734px) and (min-resolution: 1.5dppx),
+only screen and (max-width: 734px) and (min-resolution: 144dpi) {
+    .apple-one .promo-image {
+        background-image: url("/in/music/images/overview/bundle__eqmvgz1saumq_small_2x.jpg")
+    }
+}
+ 
+
+/****** apple one fixed ********/
+
+
+.promo-tiles .tile-apple-one .tile-image {
+    width: 345px;
+    height: 306px;
+    background-size: 345px 306px;
+    background-repeat: no-repeat;
+    background-image: url("/in/music/images/overview/half_bundle__cs55h3qy54qe_large.jpg");
+    position: absolute;
+    margin-left: -142px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 1.5dppx),
+(-webkit-min-device-pixel-ratio: 1.5),
+(min-resolution: 144dpi) {
+    .promo-tiles .tile-apple-one .tile-image {
+        background-image: url("/in/music/images/overview/half_bundle__cs55h3qy54qe_large_2x.jpg");
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .promo-tiles .tile-apple-one .tile-image {
+        width: 215px;
+        height: 192px;
+        background-size: 215px 192px;
+        margin-left: -87px;
+        background-repeat: no-repeat;
+        background-image: url("/in/music/images/overview/half_bundle__cs55h3qy54qe_medium.jpg");
+    }
+}
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
+only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+    .promo-tiles .tile-apple-one .tile-image {
+        background-image: url("/in/music/images/overview/half_bundle__cs55h3qy54qe_medium_2x.jpg");
+    }
+}
+.promo-tiles .tile-apple-one .tile-content {
+    flex-direction: row;
+    background-color: #fafafa;
+    padding: 60px 0;
+}
+.promo-tiles .tile-apple-one .tile-text {
+    text-align: center;
+}
+.promo-tiles .tile-apple-one .tile-logo-alt {
+    margin: auto;
+}
+.promo-tiles .tile-apple-one .links-inline {
+    margin-bottom: 0;
+    margin-top: 23px;
+}
+.promo-tiles .tile-apple-one .typography-callout {
+    margin: 28px auto 0 auto;
+    font-size: 28px;
+    line-height: 1.14286;
+    font-weight: 600;
+    letter-spacing: 0.007em;
+    max-width: 406px;
+}
+/* Apple One custom banner */
+.tile-apple-one .tile-logo-alt {
+    width: 317px;
+    height: 100px;
+    background-size: 317px 100px;
+    background-repeat: no-repeat;
+    background-image: url("/in/music/images/overview/logo-apple-one__cwtz6e3tcscy_large.png");
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 1.5dppx),
+(-webkit-min-device-pixel-ratio: 1.5),
+(min-resolution: 144dpi) {
+    .tile-apple-one .tile-logo-alt {
+        background-image: url("/in/music/images/overview/logo-apple-one__cwtz6e3tcscy_large_2x.png");
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .tile-apple-one .tile-logo-alt {
+        width: 184px;
+        height: 59px;
+        background-size: 184px 59px;
+        background-repeat: no-repeat;
+        background-image: url("/in/music/images/overview/logo-apple-one__cwtz6e3tcscy_medium.png");
+    }
+}
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
+only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+    .tile-apple-one .tile-logo-alt {
+        background-image: url("/in/music/images/overview/logo-apple-one__cwtz6e3tcscy_medium_2x.png");
+    }
+}
+@media only screen and (max-width: 734px) {
+    .tile-apple-one .tile-logo-alt {
+        width: 84px;
+        height: 28px;
+        background-size: 84px 28px;
+        background-repeat: no-repeat;
+        background-image: url("/in/music/images/overview/logo-apple-one__cwtz6e3tcscy_small.png");
+    }
+}
+@media only screen and (max-width: 734px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 734px) and (min-resolution: 1.5dppx),
+only screen and (max-width: 734px) and (min-resolution: 144dpi) {
+    .tile-apple-one .tile-logo-alt {
+        background-image: url("/in/music/images/overview/logo-apple-one__cwtz6e3tcscy_small_2x.png");
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .promo-tiles .tile-apple-one .typography-callout {
+        font-size: 24px;
+        line-height: 1.16667;
+        font-weight: 600;
+        letter-spacing: 0.009em;
+    }
+}
+@media only screen and (max-width: 734px) {
+    .promo-tiles .tile-apple-one .typography-callout {
+        font-size: 21px;
+        line-height: 1.19048;
+        font-weight: 600;
+        letter-spacing: 0.011em;
+    }
+}
+@media only screen and (max-width: 734px) {
+    .promo-tiles .tile-apple-one .tile-content {
+        flex-direction: column-reverse;
+    }
+}
+.tile-apple-one .tile-img-alt {
+    margin-left: auto;
+    margin-right: 50px;
+    width: 409px;
+    height: 363px;
+    background-size: 409px 363px;
+    background-repeat: no-repeat;
+    background-image: url("/in/music/images/overview/bundle__cs55h3qy54qe_large.jpg");
+}
+@media only screen and (max-width: 734px) {
+    .tile-apple-one .tile-img-alt {
+        margin-right: -25px;
+        margin-top: 65px;
+    }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 1.5dppx),
+(-webkit-min-device-pixel-ratio: 1.5),
+(min-resolution: 144dpi) {
+    .tile-apple-one .tile-img-alt {
+        background-image: url("/in/music/images/overview/bundle__cs55h3qy54qe_large_2x.jpg");
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .tile-apple-one .tile-img-alt {
+        width: 253px;
+        height: 225px;
+        background-size: 253px 225px;
+        background-repeat: no-repeat;
+        background-image: url("/in/music/images/overview/bundle__cs55h3qy54qe_medium.jpg");
+    }
+}
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
+only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+    .tile-apple-one .tile-img-alt {
+        background-image: url("/in/music/images/overview/bundle__cs55h3qy54qe_medium_2x.jpg");
+    }
+}
+
+
+
+
+ /*Ribbon styles*/
+/* large */
+.ribbon:not(.ribbon-apple-one) {
+	padding-top:0;
+}
+.ribbon-container { 
+    width: 100%;
+    z-index: 4;
+}
+.ribbon-container.ribbon .ribbon-content-wrapper{
+    /*position: relative;
+    top: 116px;*/
+    background: #f2f2f2;
+    color: #1d1d1f;
+    padding:0;
+}
+.ribbon {
+  margin-top: 0;
+  background-repeat: no-repeat;
+}
+.ribbon-copy {
+  padding: 9px 0;
+  background-repeat: no-repeat;
+  
+  color: #333;
+  margin-top: 0;
+  font-size: 12px;
+    line-height: 1.33337;
+    font-weight: 400;
+    letter-spacing: -.01em;
+  text-align: center;
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+.ribbon-container.ribbon .ribbon-content-wrapper a {
+  color:#06c;
+}
+/* small */
+@media only screen and (max-width: 734px) {
+  .ribbon-copy {
+    padding: 10px 0;
+    max-width: 305px;
+    margin: 0 auto;
+  }
+
+  .edge .main [data-module-template].collection-module [data-unit-id] {
+    overflow: auto;
+  }
+}
+
+/* 
+@media only screen and (max-width: 734px){
+.section-hero {
+	padding-top:220px;
+}
+}
+ */
+@media only screen and (max-width: 734px){
+.ribbon .ribbon-content {
+    max-width: 305px;
+}
+}
+
+.section-promo-tiles.promo-tiles .tile-apple-one .footnote-number {
+    top: -0.5em;
+    font-size: 0.6em;
+}
+
+
+
+.img-homepod-mini {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("/in/music/images/overview/homepod_mini__eusgu3sbls4m_large.jpg");
+ 
+}
+
+.img-homepod-mini::after{
+    content: '';
+    display: block;
+    padding-bottom: 104.16667%;
+}
+
+@media only screen and (max-width: 734px){
+.img-homepod-mini::after {
+    content: '';
+    display: block;
+    padding-bottom: 113.66667%;
+}
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 1.5dppx),
+(-webkit-min-device-pixel-ratio: 1.5),
+(min-resolution: 144dpi) {
+    .img-homepod-mini {
+        background-image: url("/in/music/images/overview/homepod_mini__eusgu3sbls4m_large_2x.jpg")
+    }
+}
+@media only screen and (max-width: 1068px) {
+    .img-homepod-mini {
+        background-image: url("/in/music/images/overview/homepod_mini__eusgu3sbls4m_medium.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 1068px) and (min-resolution: 1.5dppx),
+only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+    .img-homepod-mini {
+        background-image: url("/in/music/images/overview/homepod_mini__eusgu3sbls4m_medium_2x.jpg")
+    }
+}
+@media only screen and (max-width: 734px) {
+    .img-homepod-mini {
+        
+        background-image: url("/in/music/images/overview/homepod_mini__eusgu3sbls4m_small.jpg")
+    }
+}
+
+@media only screen and (max-width: 734px) and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (max-width: 734px) and (min-resolution: 1.5dppx),
+only screen and (max-width: 734px) and (min-resolution: 144dpi) {
+    .img-homepod-mini {
+        background-image: url("/in/music/images/overview/homepod_mini__eusgu3sbls4m_small_2x.jpg")
+    }
+}
+
+
+
+
