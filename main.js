@@ -142,14 +142,6 @@ let divScreenContainer = document.querySelector('.screenContainer');
                         </div>
                         <div class="lpApps-container">
                             <div class="lpApps-icon">
-                                <img src="./images/Todo.png" alt="Todo">
-                            </div>
-                            <div class="launchpad-icon-Text">
-                                Todo
-                            </div> 
-                        </div>
-                        <div class="lpApps-container">
-                            <div class="lpApps-icon">
                                 <img src="./images/Books.png" alt="Books">
                             </div>
                             <div class="launchpad-icon-Text">
@@ -506,8 +498,33 @@ let divScreenContainer = document.querySelector('.screenContainer');
                                         }
                                     }
 
-
+                                    if(checkAppDock){
+                                        if(appName=="Books"){
+                                            toRemoveLaunchPad();
+                                            let launchPadDockIcon = document.querySelector('.dockIcon[dockapp="Launch"]')
+                                            launchPadDockIcon.removeAttribute('style');
+                                            let appBox=`.box-box[appbox="Books"]`;
+                                            let boxBox = document.querySelector(appBox);
+                                                if(boxBox){
+                                                    let styleCheck = boxBox.getAttribute('style');
+                                                    if(styleCheck && styleCheck.includes("display: none;")){
+                                                        let currDockIcon = document.querySelector(`.dockIcon[dockApp="${appName}"]`);
+                                                        currDockIcon.removeAttribute("style");
+                                                        setTimeout(function(){
+                                                            currDockIcon.style.animation = 'box 1s  alternate';
+                                                            boxBox.style.display="block";
+                                                            return; 
+                                                        },220)  
+                                                    }
+                                                }
+                                            let currDockIcon = document.querySelector(`.dockIcon[dockApp="${appName}"]`)
+                                            books(currDockIcon);
+                                            return
+                                        }
+                                    }
                                     
+
+
                                 } 
 
 
@@ -737,6 +754,24 @@ let divScreenContainer = document.querySelector('.screenContainer');
                                     dockIconDblClick(cameraDockIcon,appName);
 
                                     netflix(cameraDockIcon);
+                                }else if(appName=="Books"){
+                                    let cameraDockIcon = document.querySelector('.dockIcon[dockapp="Books"]');
+                                   
+                                    cameraDockIcon.addEventListener("click",function(e){
+                                        let currDockIcon=document.querySelector('.dockIcon[dockapp="Books"]');
+                                            if(e.detail==3){
+                                                let boxBox = document.querySelector(`.box-box[appbox="Books"]`);
+                                                setTimeout(()=>{
+                                                    boxBox.parentNode.removeChild(boxBox);
+                                                    currDockIcon.parentNode.removeChild(currDockIcon);
+                                                },220);
+                                            }else{
+                                                books(currDockIcon);
+                                            }
+                                    })
+                                    dockIconDblClick(cameraDockIcon,appName);
+
+                                    books(cameraDockIcon);
                                 }
                                 
 
@@ -840,6 +875,14 @@ let divScreenContainer = document.querySelector('.screenContainer');
         currDockIcon.addEventListener("click",function(e){
             let currDockIcon=document.querySelector('.dockIcon[dockapp="Netflix"]');
             netflix(currDockIcon);
+        })
+    }else if(dockAppName=="Books"){
+        let currDockIcon = document.querySelector(`.dockIcon[dockapp="${dockAppName}"]`)
+
+        dockIconDblClick(currDockIcon,dockAppName);             
+        currDockIcon.addEventListener("click",function(e){
+            let currDockIcon=document.querySelector('.dockIcon[dockapp="Books"]');
+            books(currDockIcon);
         })
     }
 

@@ -233,8 +233,8 @@ body {
     transition: all 0.3s;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
+    padding-left: 110px;
 }
 
 .lpApps-container{
@@ -552,7 +552,6 @@ body {
         transition: all 0.3s;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
         align-items: center;
     }
     
