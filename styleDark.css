@@ -1,0 +1,665 @@
+/* HomePage-Box-css-(Start) */
+@font-face {
+    font-family: 'apple';
+    src: url('./font/appleFont/SF-Pro.ttf');
+}
+
+*{
+    box-sizing: border-box;
+    cursor: url("./cursor/macOS.cur"),auto;
+}
+
+body {
+    margin: 0px;
+    /* cursor: url("./Normal\ Select.cur"),auto; */
+}
+
+.main-body{
+    width: 100vw;
+    height: 100vh;
+    /* border: 2px solid red; */
+  background-image: url("./wallpaper/BigSur.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+
+
+/* HomePage Title-Box-Css-(Start) */
+
+.title-container{
+    height: 3.5%;
+    background-color:rgba(0, 0, 0, 0.3); 
+}
+
+.title-left-container{
+    float: left;
+    position: relative;
+    top: 5%;
+    height: 90%;
+    width:50%;
+    display: flex;
+    align-items:center;
+}
+
+.appleLogo{
+    height: 85%;
+    margin-left: 2.2%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.appleLogo img{
+    width: 2.6vh;
+    padding: 1px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    object-fit: contain;
+    transition: all 0.3s;
+}
+
+.homePageFinderText{
+    height: 85%;
+    margin-left: 2.2%;
+    display: flex;
+    padding: 1px;
+    align-items:center;
+    justify-content: center;
+    font-family: apple;
+    font-size:2.13vh;
+    font-weight:bold;
+    color: white;
+    transition: all 0.3s;
+}
+
+.homePageTitleInnerText{
+    height: 85%;
+    margin-left:2.5%;
+    display: flex;
+    padding: 1px;
+    align-items:center;
+    justify-content: center;
+    font-family: apple;
+    font-size:2.13vh;
+    font-weight: 500;
+    color: white;
+    transition: all 0.3s;
+ 
+}
+
+.title-right-container{
+    position: relative;
+    top: 5%;
+    height: 90%;
+    width:50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+}
+
+.homePage-title-right-icon{
+    margin-right: 2.2%;
+    height: 85%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    transition: all 0.3s;
+
+}
+
+.homePage-title-right-icon img{
+    width: 2.6vh;
+    padding: 1px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    object-fit: contain;
+    transition: all 0.3s;
+}
+
+.homePageTitleDateTime{
+    height: 85%;
+    margin-right:2.5%;
+    display: flex;
+    padding: 1px;
+    align-items:center;
+    justify-content: center;
+    font-family: apple;
+    font-size:2.13vh;
+    font-weight: 500;
+    color: white;
+    transition: all 0.3s;
+}
+
+/* HomePage Title-Box-Css-(Over) */
+
+
+/* HomePage Screen-Box-Css-(Start) */
+
+.screenContainer{
+    height: 85%;
+    width: 100%;
+    /* border: 2px solid yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* HomePage launchPad-Box-Css-(Start) */ 
+
+.launchPad-container{
+    position: fixed;
+    height:100vh;
+    width: 100vw;
+    top: 0px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation-name: lp-start-ani;
+    animation-duration: 0.7s;
+    animation-iteration-count: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    z-index: 95;
+    background-color:rgb(10, 10, 10,0.2);
+}
+
+@keyframes lp-start-ani{
+    0%{opacity: 0.0;}
+    5%{opacity: 0.4;}   
+    40%{opacity: 0.8;}
+    70%{opacity: 1;}
+}
+
+.lp-exit-ani{
+    animation-name: lp-exit-ani;
+    animation-duration: 0.7s;
+    animation-iteration-count: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes lp-exit-ani{
+    0%{opacity: 1;}
+    5%{opacity: 0.8;}   
+    40%{opacity: 0.4;}
+    70%{opacity: 0;}
+
+}
+
+.lpSearch{
+    height: 9%;
+    width: 80%;
+    /* border: 2px solid yellow; */
+    transition: all 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.lpSearch input{
+    height: 50%;
+    width: 20%;
+    border: 1px solid white;
+    border-radius: 0.6vw;
+    outline: none;
+    backdrop-filter:blur(15px);
+    background-color: transparent;
+    font-size: 1.3vw;
+    text-align: center;
+    font-weight: 300;
+    color: white;
+    font-family: apple;
+}
+.lpSearch input::placeholder{
+    color: white;
+}
+/* launchPad appBOxOptions-css-(start) */
+
+.lpApps{
+    height: 85%;
+    width: 80%;
+    /* border: 2px solid cyan; */
+    padding: 3%;
+    padding-top: 0.5vh;
+    padding-bottom: 12vh;
+    transition: all 0.3s;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 110px;
+}
+
+.lpApps-container{
+    height: 20vh;
+    width :11vw;
+    /* border: 3px solid blue; */
+    transition: all 0.3s;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lpApps-icon{
+    /* border: 1px solid cyan; */
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.lpApps-icon img{
+    height: 65%;
+} 
+
+/* launchPad - IconNameText (start) */
+
+.launchpad-icon-Text{
+    height: 20%;
+    width:80%;
+    font-size:2.2vh;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid; */
+    color: white;
+    font-weight: 499;
+    font-family: apple;
+    transition: all 0.3s;
+}
+
+/* launchPad - IconNameText (Over) */
+
+/* launchPad appBOxOptions-css-(Over) */
+
+/* HomePage launchPad-Box-Css-(Over) */
+
+
+/* homepage mac dock-Css-(start) */
+
+.dockContainer{
+    height: 11.5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+.dock{
+    position: relative;
+    padding: 3px 3px 3px 3px;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index:100;
+}
+.dockLine{
+    color: rgb(50, 48, 51,0.8);
+    font-size: 7vh;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dockIcon-editable{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dockIcon-non-editable{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid; */
+}
+.dockIcon{
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.dockIcon>img{
+    width:9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+    transform-origin: 50% 100%; 
+}
+
+
+.active-dot{
+    height:4px;
+    width: 4px;   
+    /* color: white; */
+    background-color: white;
+    border-radius: 50%;
+    /* border: 1px solid; */
+}
+
+.dockIcon img:hover {
+    transform: scale(1.3);
+    margin: 0 0.5em;
+}
+
+@keyframes box{
+    50%{margin-bottom: 3rem;}
+}
+
+/*HomePage mac dock--Css-(Over) */
+
+/* HomePage-Box-css-(Start) */
+
+
+
+
+
+
+
+
+
+
+
+
+/* appSite-Box-Box-Css-(Start) - appBox(Skeleton-AppBox) */ 
+
+.box-box{
+    position: fixed;
+    top: 5vh;
+    height: 82vh;
+    width: 82vw;
+    /* border: 5px solid blue; */
+}
+
+.box-container{
+    transition: all 0.3s;
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid; */
+    border-radius: 10px;
+    overflow: hidden;
+   
+    background-color: rgb(46,46,48);
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    animation-name: box-start-ani;
+    animation-duration:0.8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+/* appSiteBox-Animation-css(Start)*/
+
+@keyframes box-start-ani {
+    0%{margin-top: 130vh;
+       width: 0px;
+        margin-left: 50%;
+    }
+    35%{margin-top: 130vh;
+        width: 10px;
+        margin-left: 50%;
+    }
+    70%{margin-top: 130vh;
+        width: 40px;
+        margin-left: 50%;
+    }
+}
+
+.box-exit-ani{
+    animation-name: box-exit-ani;
+    animation-duration:0.8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-direction: reverse;
+}
+@keyframes box-exit-ani {
+    0%{margin-top: 130vh;
+        width: 0px;
+         margin-right: 1%;
+     }
+     35%{margin-top: 130vh;
+         width: 10px;
+         margin-right: 1%;
+     }
+     70%{margin-top: 130vh;
+         width: 40px;
+         margin-right: 1%;
+     }
+}
+
+/* appSiteBox-Animation-css(Over)*/
+
+/* mac-dialogBox title-Area-start */
+.mac-dialogBox-title{
+    height: 4%;
+    width: 100%;
+    background:rgb(64,65,65);
+    /* border-bottom: 2px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mac-dialogBox-title-boxText{
+    width: 94%;
+    font-family: apple;
+    font-weight: 500;
+    font-size: 2.2vh;
+    color: white;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 8%;
+    outline: none;
+}
+
+.mac-dialogBox-title-3option-box{
+    height: 100%;
+    width: 8%;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content:"center";
+    align-items: center;
+}
+
+.mac-dialogBox-title-icon1{
+    margin-left: 18%;
+    height: 12px;
+   width: 12px;
+   background-color: rgb(222,53,11);
+   border-radius: 50%;
+   /* border: 2px solid; */
+}
+
+.mac-dialogBox-title-icon2{
+    margin-left: 7%;
+    height: 12px;
+    width: 12px; 
+    background-color:rgb(255,171,1);
+    border-radius: 50%;
+    /* border: 2px solid; */
+    
+}
+
+.mac-dialogBox-title-icon3{
+    margin-left: 7%;
+    height: 12px;
+   width: 12px;
+   background-color: rgb(54,179,126);
+    /*border: 1px solid rgb(44,204,59);*/
+    border-radius: 50%;
+    /* border: 2px solid; */
+}   
+
+/* mac-dialogBox title-Area-Over */
+/* appSiteBox-Box-Css-(Over) - appBox(Skeleton-AppBox) */ 
+
+  /* --------------------- Media Screen --------------------- */
+
+@media screen and (max-width: 770px){
+    
+.mac-dialogBox-title-icon1{
+    margin-left: 18%;
+    height: 8px;
+   width: 12px;
+   background-color: rgb(222,53,11);
+   border-radius: 50%;
+   /* border: 2px solid; */
+}
+
+.mac-dialogBox-title-icon2{
+    margin-left: 7%;
+    height: 8px;
+    width: 12px; 
+    background-color:rgb(255,171,1);
+    border-radius: 50%;
+    /* border: 2px solid; */
+    
+}
+
+.mac-dialogBox-title-icon3{
+    margin-left: 7%;
+    height: 8px;
+   width: 12px;
+   background-color: rgb(54,179,126);
+    /*border: 1px solid rgb(44,204,59);*/
+    border-radius: 50%;
+    /* border: 2px solid; */
+}  
+    .lpApps{
+        height: 65%;
+        width: 100%;
+        /* border: 2px solid cyan; */
+        padding: 3%;
+        transition: all 0.3s;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    .lpApps-container{
+        height: 17vw;
+        width :14vh;
+        /* border: 3px solid blue; */
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.3s;
+        margin-bottom: 3vh;
+        /* transform: translate(+15%); */
+    }
+    .lpApps-icon{
+        /* border: 1px solid cyan; */
+        height: 80%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s;
+    }
+    .lpApps-icon img{
+        height: 100%;
+        transition: all 0.3s;
+   } 
+   .launchpad-icon-Text{
+    height: 20%;
+    width:80%;
+    font-size:2vw;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
+    color: white;
+    font-weight: 499;
+    font-family: apple;
+    transition: all 0.3s;
+    }
+
+    .dockIcon img{
+    width:9vw;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    transition: all 0.3s;
+    transform-origin: 50% 100%;  
+
+    }
+
+    .appleLogo img{
+        width: 2.6vw;
+        padding: 1px;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        transition: all 0.3s;
+    }
+
+    .homePage-title-right-icon img{
+        width: 2.6vw;
+        padding: 1px;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        transition: all 0.3s;
+    }
+
+    .homePageFinderText{
+        height: 85%;
+        margin-left: 2.2%;
+        display: flex;
+        padding: 1px;
+        align-items:center;
+        justify-content: center;
+        font-family: apple;
+        font-size:2.13vw;
+        font-weight:bold;
+        color: white;
+        transition: all 0.3s;
+    }
+
+    .homePageTitleInnerText{
+        height: 85%;
+        margin-left:2.5%;
+        display: flex;
+        padding: 1px;
+        align-items:center;
+        justify-content: center;
+        font-family: apple;
+        font-size:2.13vw;
+        font-weight: 500;
+        color: white;
+        transition: all 0.3s;
+
+    }
+
+    .homePageTitleDateTime{
+        height: 85%;
+        margin-right:2.5%;
+        display: flex;
+        padding: 1px;
+        align-items:center;
+        justify-content: center;
+        font-family: apple;
+        font-size:2.13vw;
+        font-weight: 500;
+        color: white;
+        transition: all 0.3s;
+    }
+}

@@ -1,0 +1,125 @@
+@font-face{
+    font-family:'appleSemiBold';
+    src: url(../../font/appleFont/SF-Pro-Display-Semibold.otf);
+}
+
+.book-appSiteBox{
+    height: 96%;
+    width: 100%;
+    display: flex;
+    /* border: 1px solid; */
+}
+.bookSideNavBlur{
+    height: 100%;
+    width: 18%;
+    background-color: rgb(31,32,34);
+    border-right: 2px solid rgb(0, 0, 0);
+    display: flex;
+}
+.bookSideNav{
+    height: 90%;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.book-navDataContainer{
+    position: relative;
+    top: 3vh;
+    height: 32%;
+    width: 80%;
+    margin-bottom: 30px;
+}
+.book-container{
+    height: 100%;
+    width: 82%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid; */
+    position: relative;
+}
+.book-banner-box{
+    height: 40%;
+    width: 100%;
+    /* border: 2px solid; */
+    background-image: url("./image/banner2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+
+.book-bestSeller-box{
+    height: 11%;
+    width: 100%;
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    padding-left: 50px;
+    color: rgb(229,229,228);;
+    
+}
+.book-stall{
+    height: 49%;
+    width: 100%;
+    /* border: 1px solid; */
+    padding-left:50px ;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+   
+}
+.book-stallBook{
+    height: 90%;
+    width: 13%;
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 30px;
+}
+.bookImg-stall img{
+    height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+.bookImg-stall img:hover{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.boomImg-name{
+    height: 13%;
+    width: 100%;
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: rgb(229,229,228);
+}
+.boomImg-authorName{
+    height: 13%;
+    width: 100%;
+    /* border: 1px solid; */
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(177, 177, 177, 0.8);
+}
+
+.pdf-box-book{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid; */
+}
+.book-cancel-btn{
+    position:absolute;
+    right: 145px;
+    top: 19px;
+    font-size: 18px;
+    color:rgb(241,241,241,.95);
+   border-radius: 50%;
+}

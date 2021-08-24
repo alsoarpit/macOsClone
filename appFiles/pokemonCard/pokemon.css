@@ -93,6 +93,8 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    cursor: url(https://ani.cursors-4u.net/cursors/cur-12/cur1103.ani), url(https://ani.cursors-4u.net/cursors/cur-12/cur1103.png), auto !important;
+
 }
 .board{
     position: relative;
@@ -110,6 +112,8 @@
     animation-timing-function: linear;
     animation-iteration-count: 1;
     z-index: 1;
+    cursor: url(https://ani.cursors-4u.net/cursors/cur-12/cur1103.ani), url(https://ani.cursors-4u.net/cursors/cur-12/cur1103.png), auto !important;
+
 }
 
 @keyframes boardAni{
@@ -125,6 +129,8 @@
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     animation-iteration-count: 1;   
+    cursor: url(https://ani.cursors-4u.net/cursors/cur-12/cur1103.ani), url(https://ani.cursors-4u.net/cursors/cur-12/cur1103.png), auto !important;
+
 }
 @keyframes flipAni{
     0%{
@@ -139,11 +145,14 @@
 .boardImg{
     position: absolute;
     height: 100%;
-  
+    cursor: url(https://ani.cursors-4u.net/cursors/cur-12/cur1103.ani), url(https://ani.cursors-4u.net/cursors/cur-12/cur1103.png), auto !important;
+
 }
 .turnImg{
     position: absolute;
     height:45%;
+    cursor: url(https://ani.cursors-4u.net/cursors/cur-12/cur1103.ani), url(https://ani.cursors-4u.net/cursors/cur-12/cur1103.png), auto !important;
+
 }
 .extraImageBox{
     position:absolute;
@@ -152,6 +161,8 @@
     width: 100%;
     /* border: 2px solid yellow; */
     display: flex;
+    cursor: url(https://ani.cursors-4u.net/cursors/cur-12/cur1103.ani), url(https://ani.cursors-4u.net/cursors/cur-12/cur1103.png), auto !important;
+
 }
 .pikaJumpContainer{
     height: 100%;
@@ -159,11 +170,15 @@
     /* border: 2px solid yellow; */
    display: flex;
    justify-content: flex-end;
+   cursor: url(https://ani.cursors-4u.net/cursors/cur-12/cur1103.ani), url(https://ani.cursors-4u.net/cursors/cur-12/cur1103.png), auto !important;
+
 }
 .pikaJump{
     height: 100%;
     width: 20%;
     /* border: 2px solid; */
+    cursor: url(https://ani.cursors-4u.net/cursors/cur-12/cur1103.ani), url(https://ani.cursors-4u.net/cursors/cur-12/cur1103.png), auto !important;
+
 }
 .pikaJumpImg{
     height: 95%;
@@ -171,6 +186,8 @@
     animation-duration: 3s;
     animation-fill-mode: both;
     animation-iteration-count: infinite;
+    cursor: url(https://ani.cursors-4u.net/cursors/cur-12/cur1103.ani), url(https://ani.cursors-4u.net/cursors/cur-12/cur1103.png), auto !important;
+
 }
 @keyframes jump{
     0% { transform:translateY(0)}
@@ -184,6 +201,8 @@
     animation-fill-mode: forwards;
     animation-timing-function: linear;
     /* border: 2px solid ; */
+    cursor: url(https://ani.cursors-4u.net/cursors/cur-12/cur1103.ani), url(https://ani.cursors-4u.net/cursors/cur-12/cur1103.png), auto !important;
+
 }
 
 @keyframes lehaEntry{
@@ -204,10 +223,14 @@
     height: 100%;
     background-repeat: no-repeat;
     /* border: 1px solid yellow; */ 
+    cursor: url(https://ani.cursors-4u.net/cursors/cur-12/cur1103.ani), url(https://ani.cursors-4u.net/cursors/cur-12/cur1103.png), auto !important;
+
 }
 .lehaBoxImg{
     margin-left: 0.5vw;
     height: 103%;
+    cursor: url(https://ani.cursors-4u.net/cursors/cur-12/cur1103.ani), url(https://ani.cursors-4u.net/cursors/cur-12/cur1103.png), auto !important;
+
 }
 
 .WobbufetBox{
@@ -220,12 +243,16 @@
     animation-duration: 1s;
     animation-timing-function: linear;
     animation-iteration-count: 1;
+    cursor: url(https://ani.cursors-4u.net/cursors/cur-12/cur1103.ani), url(https://ani.cursors-4u.net/cursors/cur-12/cur1103.png), auto !important;
+
     /* border: 1px solid; */
 }
 
 .WobbufetImg{
     height: 80%;
     transform: rotate(34deg);
+    cursor: url(https://ani.cursors-4u.net/cursors/cur-12/cur1103.ani), url(https://ani.cursors-4u.net/cursors/cur-12/cur1103.png), auto !important;
+
 }
 
 .wonDiv{
@@ -234,4 +261,6 @@
    background-image: url(./pokemonCardImage/won);
    background-repeat: no-repeat;
    background-size: cover;
+   cursor: url(https://ani.cursors-4u.net/cursors/cur-12/cur1103.ani), url(https://ani.cursors-4u.net/cursors/cur-12/cur1103.png), auto !important;
+
 }

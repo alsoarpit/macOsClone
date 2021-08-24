@@ -1,0 +1,575 @@
+/* Excel-appSite-Box-css-(start) */
+
+@font-face {
+    font-family: 'apple';
+    src: url('../../font/appleFont/SF-Pro-Display-Regular.otf');
+}
+
+.excel-appSitebox{
+    position: relative;
+    height: 96%;
+    width: 100%;
+    /* border: 2px solid; */
+}
+.excelMenu-bar-section{
+    height: 4%;
+    width: 100%;
+    /* background:rgb(64,116,82); */
+    background-color: rgb(55,55,54);
+    /* border-bottom: 2px solid; */
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+/* .excelMenu-bar-section div{
+    height: 90%;
+    font-weight: 400;
+    font-family: apple;
+    font-size: 2.1vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2.8%;
+    border-radius: ;
+} */
+.fileBox{
+    height: 90%;
+    margin-left: 2.7%;
+    border-radius:0.2vw;
+    padding: 0.4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.fileBox:hover{
+    background-color: rgb(243,242,241);
+    color: rgb(94,94,94);
+}
+
+.fileBox span{
+    font-weight: 400;
+    font-family: apple;
+    font-size: 2.1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fileM{
+    height: 10vh ;
+    width: 10vh;
+    position: absolute;
+    top:3.5vh;
+    left: 2.5vw;
+    background-color: white;
+    border-radius: 0.4vw;
+    z-index: 2;
+    overflow: hidden;
+    border: 1px solid rgb(187,187,187);;
+
+}
+.innerHelpBox{
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    backdrop-filter: blur(4px);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:0;
+}
+.helpContent{
+    width: 40vw;
+    height: 40vh;
+    border-radius: 0.4vw;
+    background-color:rgb(255, 255, 255,0.5);
+    box-shadow: rgb(0 0 0 / 15%) 0px 2px 8px;
+    border: 1px solid rgb(16,124,65);
+}
+
+.excelFeatures{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: apple;
+    font-size: 1.3vw;
+    font-weight: 500;
+}
+.helpBox span{
+    font-weight: 400;
+    font-family: apple;
+    font-size: 2.1vh;
+    padding: 0.4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.helpBox{
+    height: 90%;
+    margin-left: 2.5%;
+    border-radius:0.2vw;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.helpBox:hover{
+    background-color: rgb(243,242,241);
+    color: rgb(94,94,94);
+}
+.excelMenu-optionBar-section{
+    height: 8%;
+    width: 100%;
+    background-color: rgb(55,55,54);
+    border-bottom: 1px solid rgb(187,187,187);
+    display: flex;
+    color: rgb(229, 229, 228);
+}
+.excelClear{
+    height: 50%;
+    width: 100%;
+    display: flex;justify-content: center;
+    align-items: center;
+    color: rgb(95,99,104);
+    font-family: apple;
+   /* font-weight: 400; */
+   font-size: 1.2vw;
+   border-bottom: 1px solid rgb(187,187,187);;
+}
+.excelClear:hover{
+    background-color:rgb(223, 228, 234 ,0.8);
+}
+.excelSave{
+    height: 50%;
+    width: 100%;
+    display: flex;justify-content: center;
+    align-items: center;
+    color: rgb(95,99,104);
+    font-family: apple;
+   /* font-weight: 400; */
+    font-size: 1.2vw;
+    overflow: hidden;
+}
+.excelSave:hover{
+    color: rgb(94,94,94);
+    background-color:rgb(223, 228, 234 ,0.8);
+}
+.optionBarTextBox{
+    height: 100%;
+    width:15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgb(213,213,213);
+    /* border: 1px solid; */
+}
+.optionBarColorBox{
+    height: 100%;
+    width:12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgb(213,213,213);
+    /* border: 1px solid; */
+}
+.optionBarTextAlignBox{
+    height: 100%;
+    width:15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgb(213,213,213);
+    /* border: 1px solid; */
+}
+
+.optionInnerBarTextBox{
+    height: 75%;
+    width: 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid; */
+}
+.optionInnerBarTextAlignBox{
+    height: 75%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid; */
+}
+.optionInnerBarColorBox{
+    height: 75%;
+    width: 25%;
+    /* border: 1px solid; */
+}
+
+.optionBarFontBox{
+    height: 100%;
+    width:15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgb(213,213,213);
+    /* border: 1px solid; */
+}
+
+#FontBarBox{
+    outline:none;
+    border:none;
+    height: 100%;
+    border-radius: 0.4vw;
+    background-color: transparent;
+    font-weight: 500;
+    /* border: 1px solid; */
+    font-family: apple;
+}
+
+#FontSizeBarBox{
+    outline:none;
+    border:none;
+    height: 100%;
+    border-radius: 0.4vw;
+    
+    font-weight: 500;
+    /* border: 1px solid; */
+    font-family: apple;
+}
+.optionInnerBarFontBox{
+    height: 4vh !important;
+    padding: 0.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.4vw;
+    overflow: hidden;
+    /* border: 1px solid; */
+}
+.optionInnerBarFontSizeBox{
+    height: 4vh !important;
+    padding: 0.5vh;
+    display: flex;
+    margin-left: 1vw;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.4vw;
+    overflow: hidden;
+}
+.optionInnerBarFontBox:hover{
+    background-color:rgb(223, 228, 234 ,0.8);
+
+}
+.optionInnerBarFontSizeBox:hover{
+    background-color:rgb(223, 228, 234 ,0.8);
+
+}
+
+.optionInnerBarFontBox select{
+    font-size: 2.1vh;
+    color: rgb(229, 229, 228) !important;
+    /* border: 1px solid; */
+ 
+}
+.optionInnerBarFontSizeBox select{
+    font-size: 2.1vh;
+    color: rgb(95,99,104) !important;
+    /* border: 1px solid; */
+
+}
+
+.optionInnerBarTextBox span{
+    height: 4vh !important;
+    width: 60% !important;
+    color: rgb(229, 229, 228) !important;
+    display: flex;
+    /* border: 1px solid; */
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.4vw;
+}
+.optionInnerBarTextAlignBox span{
+    height: 4vh !important;
+    width: 65% !important;
+    color:rgb(229, 229, 228) !important;
+    display: flex;
+    /* border: 1px solid; */
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.4vw;
+    font-size: 1.5vw;
+}
+.optionInnerBarColorBox span{
+    height: 4vh !important;
+    width: 90% !important;
+    color: rgb(229, 229, 228) !important;
+    display: flex;
+    /* border: 1px solid; */
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.4vw;
+}
+.optionInnerBarColorBox span:hover{
+    background-color:rgb(223, 228, 234 ,0.8);
+}
+.optionInnerBarTextBox span:hover{
+    background-color:rgb(223, 228, 234 ,0.8);
+}
+.optionInnerBarTextAlignBox span:hover{
+    background-color:rgb(223, 228, 234 ,0.8);
+}
+
+.material-icons.md{ 
+    font-size: 1.3vw;
+    color:rgb(229, 229, 228); ;
+}
+.material-icons.colorBoxBgColor{
+    margin-top: -1.6px; 
+    font-size: 1.19vw;
+}
+.colorBoxColorText{ 
+    font-size: 1.7vw;
+    color: rgb(229, 229, 228);;
+}
+.excel-formula-section{
+    height: 4%;
+    background-color: rgb(55,55,54);
+    border-bottom: 1px solid rgb(187,187,187);
+    display: flex;
+    align-items: center;
+}
+
+.excel-selected-cell-div{
+    height: 100%;
+    width: 10%;
+    /* border: 2px solid; */
+    border-right:1px solid rgb(187,187,187);
+    display: flex;
+    color: rgb(229, 229, 228);
+    justify-content: center;
+    align-items: center;
+    font-size: 2.1vh;
+    font-weight: 400;
+    background-color: rgb(55,55,54);
+    font-family: apple;
+}
+
+.excel-formula-input{
+    display: block;
+    height: 100%;
+    width: 90%;
+    outline: none;
+    font-size: 2.1vh;
+    font-weight: 400;
+    font-family: apple;
+    border: none;
+    /* background-color: cyan; */
+    padding-left: 5px;
+    color: rgb(229, 229, 228);
+    background-color: rgb(55,55,54);
+    
+}
+.excel-blank-column-container{
+    height: 4%;
+    display: flex;
+}
+
+.excel-blank-corner{
+    height: 100%;
+    width:4.5vh;
+    background-color: rgb(39,38,39);
+    z-index: 1;
+    display: flex;
+    flex-shrink: 0;
+}
+
+.excelColumnSection{
+    height: 100%;
+    /* width: 100vw; */
+    display: flex;
+    flex-shrink: 0;
+}
+.excel-column-box{
+    height: 100%;
+    width: 10vh;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    border-right:1px solid rgb(213,213,213);
+    border-bottom: 1px solid  rgb(187,187,187);
+    font-size: 2.2vh;
+    font-weight: 400;
+    color: rgb(229, 229, 228);
+    font-family: apple;
+    background-color: rgb(39,38,39)
+}
+.gridExcel{
+    height: 76%;
+    width: 100%;
+    background-color: white;
+    overflow: auto;
+    display: flex;
+}
+.excelSheetSection{
+    height: 4%;
+    max-width: 100%;
+    background-color:  rgb(55,55,54);
+    border-top: 1px solid rgb(193, 192, 191);
+} 
+.excel-rowNum-Section{
+    display: inline-block;
+} 
+.excelNumBox{
+    height: 3.5vh;
+    width: 4.5vh;
+    font-size: 2.2vh;
+    font-weight: 400;
+    color: rgb(229, 229, 228);
+    font-family: apple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(213,213,213);
+    border-right: 1px solid rgb(187,187,187);
+    background-color: rgb(39,38,39)
+}
+.excelRow{
+    display: flex;
+   
+}
+.excelColumn{
+    width: 10vh;
+    height: 3.5vh;
+    border-bottom: 1px solid rgb(213,213,213);
+    border-right:1px solid rgb(213,213,213);
+    flex-shrink:0;
+    outline: none;
+    padding: 1px;
+    font-family: apple;
+    font-weight: 400;
+    color:rgb(94,94,94);
+    font-size: 2.2vh;
+    align-items: center;
+    overflow:hidden;
+    background-color: rgb(26,26,26);
+}
+
+.excelSelectedCell{
+    border: 2px solid rgb(80,141,107);
+    color:rgb(229, 229, 228); ;
+}
+
+.excel-cell-Section{
+
+    width: calc(100vw - 4.5vh);
+    /* background-color: red; */
+    /* border: 2px solid; */
+}
+
+.bgCellColor{
+    position: relative;
+    top: -4vh;
+    z-index: -1;
+
+}
+
+@media screen and (max-width: 770px){
+    
+    .optionInnerBarFontBox{
+        height: 3vw !important;
+        padding: 0.5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.4vw;
+        overflow: hidden;
+        /* border: 1px solid; */
+    }
+    .optionInnerBarFontSizeBox{
+        height: 3vw !important;
+        padding: 0.5vh;
+        display: flex;
+        margin-left: 1vw;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.4vw;
+        overflow: hidden;
+    }
+    .optionInnerBarColorBox span{
+        height: 3vw !important;
+        width: 90% !important;
+        color: rgb(229, 229, 228) !important;
+        display: flex;
+        /* border: 1px solid; */
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.4vw;
+    }
+
+    .optionInnerBarTextAlignBox span{
+        height: 3vw !important;
+        width: 65% !important;
+        color: rgb(229, 229, 228) !important;
+        display: flex;
+        /* border: 1px solid; */
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.4vw;
+        font-size: 1.5vw;
+    }
+
+    .optionInnerBarTextBox span{
+        height: 2.5vw !important;
+        width: 60% !important;
+        color: rgb(229, 229, 228) !important;
+        display: flex;
+        /* border: 1px solid; */
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.4vw;
+    }
+    .optionInnerBarTextAlignBox span{
+        font-size: 1.3vh;
+    }
+    #FontSizeBarBox{
+        
+        font-size: 1.3vh;
+    }
+    
+    #FontBarBox{
+        font-size: 1.3vh;
+        
+    }
+
+    .material-icons.alignDecoration { 
+        font-size: 1.5vh;
+        color: rgb(229, 229, 228);;
+    }
+    .material-icons.md{ 
+        font-size: 1.3vh;
+    }
+    .material-icons.colorBoxBgColor{ 
+        font-size: 1.3vh;
+    }
+    .colorBoxColorText{ 
+        font-size: 1.7vh;
+        color: rgb(229, 229, 228);
+    }
+   
+    .optionInnerBarFontBox select{
+        font-size: 2.1vW;
+      color: rgb(229, 229, 228) !important;
+        /* border: 1px solid; */
+    }
+    .optionInnerBarFontSizeBox select{
+        font-size: 2.1vW;
+           color: rgb(229, 229, 228) !important;
+        /* border: 1px solid; */
+    }
+}
+/* Excel-appSite-Box-css-(Over) */

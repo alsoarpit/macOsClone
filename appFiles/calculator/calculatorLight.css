@@ -1,0 +1,76 @@
+.appBox-Calc{
+    width: 404px;
+    height: 546px;
+}
+.calc-fulScreenBtn{
+    display: none;
+}
+.app-calc-siteBox{
+    height: 96%;
+    width: 100%;
+    /* border: 1px solid; */
+}
+.AnsBox-calc{
+    height: 119px;
+    width: 100%;
+    /* border: 1px solid yellow; */
+    background-color: rgb(43,44,46);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    font-size: 75px;
+    padding-right: 20px;
+}
+.calc-KeyPad{
+    height: 420px;
+    width: 100%;
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+}
+.keypad-box{
+    height: 81px;
+    width: 100.68px;
+    border: 1px solid rgb(43,44,46);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(8,8,9);
+}
+.clac-keypad-row{
+    display: flex;
+    height: 81px;
+    width: 100%;
+    background-color: rgb(63,64,66);
+}
+.darkGreyBox-calc{
+    background-color: rgb(214,214,214);
+}
+.lightGreyBox-calc{
+    background-color: rgb(225,225,225);
+}
+.orangeBox-calc{
+    width: 102px;
+    height: 81px;
+    background-color: rgb(255,159,12);
+    border: 1px solid rgb(43,44,46);
+}
+.clacKeypadNoborder-right{
+    border-right: 0px;
+    height: 81px;
+    width: 100.68px;
+}
+.clacKeypadNoborder-left{
+    border-left: 2px rgb(43,44,46);;
+    border-right: 1px solid rgb(43,44,46);
+}
+.clacKeypadNoborder{
+    border-right: 0.5px solid rgb(43,44,46);
+    width: 102px;
+}

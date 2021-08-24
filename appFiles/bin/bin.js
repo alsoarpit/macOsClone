@@ -35,6 +35,159 @@ function bin(currDockIcon){
                     Bin
                 </div>
             </div>
+            <div class="bin-appSiteBox">
+                <div class="binSideNavBlur"">
+                    <div class="binSideNav">
+                    <div class="bin-navDataContainer">
+                            <div class="navLib navLibDark">Favourites</div>
+                            <div class="bin-navbox special-bin-NavBox">
+                                    <span class="material-icons-outlined bin-spanBox">
+                                    inventory_2
+                                    </span>
+                                    <span class="navText">
+                                        Local
+                                    </span>
+                            </div>
+                            <div class="bin-navbox">
+                                    <span class="material-icons-outlined bin-spanBox">
+                                        computer
+                                    </span>
+                                    <span class="navText">
+                                        Applications
+                                    </span>
+                            </div>
+                            <div class="bin-navbox">
+                                    <span class="material-icons-outlined bin-spanBox">
+                                    receipt_long
+                                    </span>
+                                    <span class="navText">
+                                        Recents
+                                    </span>
+                            </div>
+                            <div class="bin-navbox">
+                                    <span class="material-icons-outlined bin-spanBox">
+                                        cloud
+                                    </span>
+                                    <span class="navText">
+                                        iCloud
+                                    </span>
+                            </div>
+                            <div class="bin-navbox">
+                                    <span class="material-icons-outlined bin-spanBox">
+                                    computer
+                                    </span>
+                                    <span class="navText">
+                                        Desktop
+                                    </span>
+                            </div>
+                            <div class="bin-navbox">
+                                    <span class="material-icons-outlined bin-spanBox">
+                                    description
+                                    </span>
+                                    <span class="navText">
+                                        Documents
+                                    </span>
+                            </div>
+                            <div class="bin-navbox">
+                                    <span class="material-icons-outlined bin-spanBox">
+                                    download_for_offline
+                                    </span>
+                                    <span class="navText">
+                                        Downloads
+                                    </span>
+                            </div>
+                            
+                    </div>
+
+                    <div class="bin-navDataContainer upperBorder2ndBox">
+                            <div class="navLib navLibDark">Tags</div>
+                            <div class="bin-navbox">
+                                    <span class="material-icons-round redBinColor">
+                                    circle
+                                    </span>
+                                    <span class="bin-navText">
+                                        Red
+                                    </span>
+                            </div>
+                            <div class="bin-navbox">
+                                    <span class="material-icons-round orangeBinColor">
+                                    circle
+                                    </span>
+                                    <span class="bin-navText">
+                                        Orange
+                                    </span>
+                            </div>
+                            <div class="bin-navbox">
+                                    <span class="material-icons-round yellowBinColor">
+                                    circle
+                                    </span>
+                                    <span class="bin-navText">
+                                        Yellow
+                                    </span>
+                            </div>
+                            <div class="bin-navbox">
+                                    <span class="material-icons-round greenBinColor">
+                                    circle
+                                    </span>
+                                    <span class="bin-navText">
+                                        Green
+                                    </span>
+                            </div>
+                            <div class="bin-navbox">
+                                    <span class="material-icons-round blueBinColor">
+                                    circle
+                                    </span>
+                                    <span class="bin-navText">
+                                        Blue
+                                    </span>
+                            </div>
+                            <div class="bin-navbox">
+                                    <span class="material-icons-round purpleBinColor">
+                                    circle
+                                    </span>
+                                    <span class="bin-navText">
+                                        purple
+                                    </span>
+                            </div>
+                            <div class="bin-navbox">
+                                    <span class="material-icons-round greyBinColor">
+                                    circle
+                                    </span>
+                                    <span class="bin-navText">
+                                        Grey
+                                    </span>
+                            </div>
+                            
+                            
+                           
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="inner-binContainer">
+                        <div class="noMedia">
+                        <span class="material-icons-outlined noMediaIcon">
+                        warning
+                        </span>
+                        NO MEDIA FOUND
+                        </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
         </div>
     `
     divScreenContainer.append(div);

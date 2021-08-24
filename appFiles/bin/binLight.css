@@ -1,0 +1,99 @@
+.bin-appSiteBox{
+    height: 96%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.binSideNavBlur{
+    height: 100%;
+    width: 16%;
+    background-color: rgb(246, 246, 246);
+    border-right: 2px solid rgb(232,203,212);
+    display: flex;
+}
+.binSideNav{
+    height: 90%;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bin-navDataContainer{
+    position: relative;
+    top: 3vh;
+    height: 50%;
+    width: 80%;
+}
+.bin-navbox{
+    height: 11.5%;
+    width: 90%;
+    padding-left: 1vw;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid; */
+    border-radius: 5px;
+    margin-bottom: 0.5vh;
+    color: rgb(70,72,74);
+}
+.bin-navbox:hover{
+    background-color: rgb(218, 187, 191,.5);
+    color: black;
+}
+.special-bin-NavBox{
+    color: black;
+    background-color: rgb(218, 187, 191,.5);
+    color: rgb(70,72,74);
+}
+.bin-spanBox{
+    font-size: 2.2vh;
+    width: 18%;
+    color: rgb(70,72,74);
+}
+.bin-colorBox{
+    height: 60%;
+    width: 17%;
+}
+.bin-navText{
+    font-size: 2vh;
+    margin-left: 1vh;
+    font-family: appleSemiBold;
+}
+
+.redBinColor{
+    color: rgb(254,105,92);
+    font-size: 15px;
+}
+.orangeBinColor{
+    color: rgb(245,168,63);
+    font-size: 15px;
+}
+.yellowBinColor{
+    color: rgb(246,211,63);
+    font-size: 15px;
+}
+.greenBinColor{
+    color: rgb(113,206,82);
+    font-size: 15px;
+}
+.blueBinColor{
+    color: rgb(77,186,233);
+    font-size: 15px;
+}
+.purpleBinColor{
+    color: rgb(217,141,226);
+    font-size: 15px;
+}
+.greyBinColor{
+    color: rgb(164,164,165);
+    font-size: 15px;
+}
+.inner-binContainer{
+    height: 100%;
+    width: 85%;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   /* border: 1px solid; */
+}

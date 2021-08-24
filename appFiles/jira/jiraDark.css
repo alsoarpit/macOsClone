@@ -1,0 +1,518 @@
+@font-face{
+    font-family:'appleSemiBold';
+    src: url(../../font/appleFont/SF-Pro-Display-Semibold.otf);
+}
+
+
+.container-jira{
+    
+    height: 96%;
+    width: 100%;
+    /* border: 3px solid; */
+}
+.jira-title{
+    height: 8%;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    display: flex;
+    align-items: center;
+}
+.jiraTBOx{
+    height: 100%;
+    margin-left: 2.1vw;
+    font-size: 1.2vw;
+    color: rgb(229, 229, 228);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+.jiraTBox-name{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   font-family:appleSemiBold;
+   /* border: 1px solid; */
+
+}
+.jiraTBox-indicator{
+    height: 10%;
+    width: 100%;
+    border-radius: 0.1vw 0.1vw 0vw 0vw;
+}
+.box1Fixed{
+    color: rgb(229, 229, 228);
+}
+.box1IndiFixed{
+    background-color:rgb(0,82,204);
+}
+.displayN:hover{
+    color: rgb(0, 0, 0)
+}
+.jiraTBOx:hover .displayI{
+    background-color:rgb(0,82,204)
+}
+.createBox{
+    /* border: 1px solid; */
+    height: 78%;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    border-radius: 0.4vw;
+    color: white;
+    background-color:rgb(0,82,204);
+}
+
+
+.jiraLogo{
+    height: 100%;
+    margin-left: 1.5vw;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid; */
+    font-size: 2vw;
+    font-family: appleSemiBold;
+    color: rgb(229, 229, 228);
+}
+.jiraLogo span{
+    margin-left: 0.6vw;
+    font-size: 1.2vw;
+}
+.jiraLogo img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2vw;
+
+}
+.grid{
+    height: 92%;
+    width: 100%;
+    display: flex;
+    /* border: 1px solid; */
+}
+.leftMenu{
+    height: 100%;
+    width: 16%;
+    border-right: 2px solid rgb(0, 0, 0);
+    border-top: 2px solid rgb(0, 0, 0);
+    background-color: rgb(31,32,34);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.teamNSpaceArea{
+    height: 14%;
+    width: 90%;
+     /* background-color: red; */
+     /* border: 1px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid rgb(0, 0, 0);
+}
+.teamNSpaceArea2{
+    height: 38%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.8vh;
+    /* background-color: rebeccapurple; */
+    border-bottom: 3px solid rgb(0, 0, 0);
+}
+.teamNSpaceArea2-box{
+    height: 23%;
+    width: 100%;
+    /* background-color: cyan; */
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.4vw;
+    overflow: hidden;
+}
+.teamNSpaceArea2-box:hover{
+    background-color: rgb(95, 95, 95);
+}
+.desImg{
+    /* border: 1px solid; */
+    font-size: 1.5vw;
+    color:rgb(229, 229, 228);
+}
+.tns-box-InnerText{
+    margin-left: 0.5vw;
+    font-size: 1.1vw;
+    font-family: appleSemiBold;
+    color: rgb(229, 229, 228);
+
+
+
+
+
+}
+.tns-box-Inner{
+    height: 80%;
+    width: 85%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+}
+.nameSpaceBox{
+    width: 85%;
+    /* background-color: blue; */
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+
+}
+.nameSpaceBox-logo{
+    background-color: rgb(223, 228, 234);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.4vw;
+    /* border: 1px solid; */
+}
+
+.nameSpaceBox img{
+    padding: 0.2vw;
+    height: 2.5vw;
+}
+.nameSpaceBox-text{
+    margin-left: 1vw;
+    font-size: 1.2vw;
+    font-family: appleSemiBold;
+    color: rgb(229, 229, 228);
+
+
+
+
+
+}
+
+.jira-right-container{
+    height: 100%;
+    width:84%;
+   /* border: 2px solid; */
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: relative;
+   
+}
+.jira-rightTitle{
+    height: 10%;
+    width: 95%;
+   /* border: 2px solid; */
+   display: flex;
+    align-items: center;
+    
+}
+.JRT-titleBox{
+    height: 90%;
+    /* border:1px solid; */
+    width:70%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.JRT-filterBox{
+    height: 9%;
+    width: 95%;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+}
+.JRT-innerFilterBox{
+    height: 100%;
+    width:50%;
+    /* border: 2px solid; */
+    border-radius:0.3vw;
+    background-color:rgb(0,82,204);
+    display: flex;
+    align-items: center;
+}
+
+
+.JRTRelaseBox{
+    /* border: 1px solid; */
+    height: 70%;
+    padding-left: 0.4vw;
+    padding-right: 0.4vw;
+    margin-right: 0.5vw;
+    border-radius: 0.4vw;
+    font-size: 1.25vw;
+    font-family: appleSemiBold;
+    color: rgb(85,99,127);
+    display: flex;
+    background-color: rgb(239,241,244);
+    justify-content: center;
+    align-items: center;
+}
+.JRTRelaseBox:hover{
+    background-color: #cbcbce;
+}
+.JRT-dots{
+    font-size: 1.8vw;
+}
+.JRT-boardBox{
+    height: 90%;
+    width: 30%;
+    /* border:1px solid; */
+    display: flex;
+    align-items: center;
+    font-size: 2vw;
+    font-family: appleSemiBold;
+    color: rgb(229, 229, 228);
+}
+
+.quickFilter{
+    height: 100%;
+    /* border: 1px solid; */
+    margin-left: 0.5vw;
+    width: 25%;
+    border-radius: 0.4vw ;
+    /* background-color: rgb(0,82,204); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid white; */
+}
+
+.quickFilterText{
+    margin-left: 0.5vw;
+    font-size: 1.1vw;
+    font-family: appleSemiBold;
+    color: white;
+}
+
+.quickFilterImg{
+   font-size: 1.5vw;
+   color: white;
+}
+
+.jiraColorBox{
+    margin-left: 0.8vw;
+    height: 90%;
+    width: 70%;
+    border-radius: 0.3vw;
+    /* border: 2px solid; */
+    background-color: white;
+    display: flex;
+    align-items: center;
+
+}
+.JRT-innerColorBox{
+    margin-left: 1vw;
+    height:80%;
+    width: 20%;
+    /* border: 1px solid; */
+    border-radius: 0.4vw;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+}
+.jiraRed{
+    background-color: rgb(255, 86, 48);
+}
+.jiraRedBox{
+    background-color: rgb(255, 86, 48);
+}
+.jiraRed:hover{
+   
+    border: 2px solid rgb(38,57,89);
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+
+}
+.jiraYellowBox{
+    background-color: rgb(255, 171,0);
+}
+.jiraYellow{
+    background-color: rgb(255, 171,0);
+}
+.jiraYellow:hover{
+    border: 2px solid rgb(38,57,89);
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.jiraGreen{
+    background-color: rgb(54, 179,126);
+}
+.jiraGreenBox{
+    background-color: rgb(54, 179,126);
+}
+.jiraGreen:hover{
+    border: 2px solid rgb(38,57,89);
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+
+}
+.jiraTamaramaBox{
+    background-color: rgb(0, 184, 217);
+}
+.jiraTamarama{
+    background-color: rgb(0, 184, 217);
+}
+.jiraTamarama:hover{
+    border: 2px solid rgb(38,57,89);
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+
+}
+
+.jira-right-Content-Box{
+    height:81%;
+    width: 95%;
+   /* border: 2px solid; */
+   padding-top: 3vh;
+   display: flex;
+   flex-wrap: wrap;
+   overflow: auto;
+}
+.jiraNoteContainer{
+    margin-right: 1vw;
+    height: 50%;
+    width: 23.5%;
+    /* background-color: rgb(241,243,245); */
+    border-radius: 0.5vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center; 
+    /* background-color: rgb(255, 86, 48); */
+    margin-bottom: 1.2vw;
+}
+.checkBox1{
+    background-color:  rgb(255, 171,0);
+}
+.checkBox2{
+    background-color:  rgb(54, 179,126);
+}
+.checkBox3{
+    background-color: rgb(0, 184, 217);
+}
+.jiraIdNColorBox{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 2.4vh;
+    padding-left: 1vw;
+    font-family: appleSemiBold;
+    color: white;
+    /* border-bottom: 2px solid rgb(230,231,233); */
+    /* background-color: red; */
+}
+.jiraNoteBOx{
+    overflow: auto;
+    height: 82%;
+    width: 95%;
+    background-color: white;
+    border-radius:0.5vw ;
+    padding: 1vh;
+    outline: none;
+    font-size: 1.5vw;
+    font-family: appleSemiBold;
+    color: rgb(38,57,89);
+}
+.jiraModal{
+     backdrop-filter: blur(3px); 
+   /* background-color: red; */
+   position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.jiraModalBox{
+    height:70%;
+    width: 50%;
+    background-color: rgb(0,82,204);
+    border-radius: 1.1vw 1.1vw 1.1vw 1.1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px; */
+
+
+
+
+}
+.jiraModalContent{
+    height: 100%;
+    width: 70%;
+    /* background-color: red; */
+    border-radius: 1vw;
+    background-color: white;
+    padding: 2vh;
+    font-size: 1.5vw;
+    color: rgb(38,57,89);
+    font-family: appleSemiBold;
+    outline: none;
+    overflow: auto;
+    border: 3px solid rgb(0,82,204);;
+}
+.jiraModalFilterColor{
+    height: 100%;
+    width: 30%;
+    background-color: rgb(0,82,204);
+    border-radius: 0.5vw 1vw 1vw 0.5vw;
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   justify-content: center;
+  
+}
+.modalCencelBox{
+    height: 15%;
+    width: 88%;
+    background-color:  white ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:0.4vw ;
+    
+}
+.modalCencelBox:hover{
+    background-color:rgb(255, 143, 115) ;
+}
+.jiraModalInnerColorFilter{
+    margin-top: 0.5vw;
+    height: 77%;
+    width: 88%;
+    background-color: white;
+    border-radius: 0.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalcancel{
+    font-size: 2.1vw;
+    color: rgb(38,57,89);
+}
+.modalcancelText{
+    font-size: 1.5vw;
+    color: rgb(38,57,89);
+    font-family: appleSemiBold;
+}
+.modalColorBox{
+    margin-bottom: 0.5vw;
+    height: 20%;
+    width: 90%;
+    border-radius: 0.4vw;
+}
+@media screen and (max-width: 770px){
+    .jira-title{
+        height: 5vw;
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+        display: flex;
+        align-items: center;
+    }
+}
