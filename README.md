@@ -1,2 +1,1 @@
 # macOsClone
-# arpitRack# macOsClone
